@@ -1,43 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lhernand <lhernand@student.us.org>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/27 21:12:49 by lhernand          #+#    #+#             */
-/*   Updated: 2017/09/28 04:39:35 by lhernand         ###   ########.fr       */
+/*   Created: 2017/09/28 05:39:23 by lhernand          #+#    #+#             */
+/*   Updated: 2017/09/28 06:14:30 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		*ft_strnstr(const char *big, const char *little, size_t len)
+void		*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 {
-	int i;
-	int j;
-	int z;
+	char *restrict su1;
+	const char *restrict su2;
 
-	i = 0;
-	j = 0;
-	if (little[0] == '\0')
-		return ((char *)&big[i]);
-	while (big[i])
+	su1 = dst;
+	su2 = src;
+	while (0 < n)
 	{
-		z = i;
-		while ((big[z] == little[j]) && (little[j]) && (len != 0))
-		{
-			z++;
-			j++;
-			len--;
-		}
-		if	(!little[j])
-			return ((char *)&big[i]);
-		j = 0;
-		i++;
+		*su1 = *su2;
+		su1++;
+		su2++;
+		n--;
 	}
-	return (0);
+	return (dst);
 }
-
-
-

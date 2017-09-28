@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 09:54:07 by lhernand          #+#    #+#             */
-/*   Updated: 2017/09/28 01:51:28 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/09/28 05:31:40 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -348,56 +348,283 @@ int		main(void)
 	testn(27);
 
     bgreen();
-    ft_putstr("0 => ");
+    ft_putstr("ft_putnbr => 0 => ");
     bblue();
    	ft_putnbr(0);
     bgreen();
-    ft_putstr("\n1 => ");
+    ft_putstr("\nft_putnbr => 1 => ");
     bblue();
     ft_putnbr(1);
     bgreen();
-    ft_putstr("\n-1 => ");
+    ft_putstr("\nft_putnbr => -1 => ");
     bblue();
     ft_putnbr(-1);
     bgreen();
-    ft_putstr("\n10 => ");
+    ft_putstr("\nft_putnbr => 10 => ");
     bblue();
     ft_putnbr(10);
     bgreen();
-    ft_putstr("\n-10 => ");
+    ft_putstr("\nft_putnbr => -10 => ");
     bblue();
     ft_putnbr(-10);
     bgreen();
-    ft_putstr("\n3333 => ");
+    ft_putstr("\nft_putnbr => 3333 => ");
     bblue();
     ft_putnbr(3333);
     bgreen();
-    ft_putstr("\n-3333 => ");
+    ft_putstr("\nft_putnbr => -3333 => ");
     bblue();
     ft_putnbr(-3333);
     bgreen();
-    ft_putstr("\n42 => ");
+    ft_putstr("\nft_putnbr => 42 => ");
     bblue();
    	ft_putnbr(42);
     bgreen();
-    ft_putstr("\n-42 => ");
+    ft_putstr("\nft_putnbr => -42 => ");
     bblue();
     ft_putnbr(-42);
     bgreen();
-    ft_putstr("\n2147483647 => ");
+    ft_putstr("\nft_putnbr => 2147483647 => ");
     bblue();
     ft_putnbr(2147483647);
     bgreen();
-    ft_putstr("\n-2147483648 => ");
+    ft_putstr("\nft_putnbr => -2147483648 => ");
     bblue();
     ft_putnbr(-2147483648);
     bgreen();
-    ft_putstr("\n0123 (this is octal) => ");
+    ft_putstr("\nft_putnbr => 0123 (this is octal) => ");
     bblue();
     ft_putnbr(0123);
     c_reset();
     ft_putstr("\n");
 
+    testn(28);
+    
+    bgreen();
+    ft_putstr("ft_putnbr_fd => 0, 1 => ");
+    green();
+   	ft_putnbr_fd(0, 1);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => 1, 1 => ");
+    green();
+    ft_putnbr_fd(1, 1);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => -1, 1 => ");
+    green();
+    ft_putnbr_fd(-1, 1);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => 10, 1 => ");
+    green();
+    ft_putnbr_fd(10, 1);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => -10, 1 => ");
+    green();
+    ft_putnbr_fd(-10, 1);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => 3333, 1 => ");
+    green();
+    ft_putnbr_fd(3333, 1);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => -3333, 1 => ");
+    green();
+    ft_putnbr_fd(-3333, 1);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => 42, 1 => ");
+    green();
+   	ft_putnbr_fd(42, 1);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => -42, 1 => ");
+    green();
+    ft_putnbr_fd(-42, 1);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => 2147483647, 1 => ");
+    green();
+    ft_putnbr_fd(2147483647, 1);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => -2147483648, 1 => ");
+    green();
+    ft_putnbr_fd(-2147483648, 1);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => 0123, 1 (this is octal) => ");
+    green();
+    ft_putnbr_fd(0123, 1);
+    c_reset();
+    ft_putstr("\n\n");
+    
+    bgreen();
+    ft_putstr("ft_putnbr_fd => 0, 2 => ");
+    red();
+   	ft_putnbr_fd(0, 2);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => 1, 2 => ");
+    red();
+    ft_putnbr_fd(1, 2);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => -1, 2 => ");
+    red();
+    ft_putnbr_fd(-1, 2);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => 10, 2 => ");
+    red();
+    ft_putnbr_fd(10, 2);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => -10, 2 => ");
+    red();
+    ft_putnbr_fd(-10, 2);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => 3333, 2 => ");
+    red();
+    ft_putnbr_fd(3333, 2);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => -3333, 2 => ");
+    red();
+    ft_putnbr_fd(-3333, 2);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => 42, 2 => ");
+    red();
+   	ft_putnbr_fd(42, 2);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => -42, 2 => ");
+    red();
+    ft_putnbr_fd(-42, 2);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => 2147483647, 2 => ");
+    red();
+    ft_putnbr_fd(2147483647, 2);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => -2147483648, 2 => ");
+    red();
+    ft_putnbr_fd(-2147483648, 2);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => 0123, 2 (this is octal) => ");
+    red();
+    ft_putnbr_fd(0123, 2);
+    c_reset();
+    ft_putstr("\n\n");
+    
+    bgreen();
+    ft_putstr("ft_putnbr_fd => 0, 0 => ");
+    yellow();
+   	ft_putnbr_fd(0, 0);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => 1, 0 => ");
+    yellow();
+    ft_putnbr_fd(1, 0);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => -1, 0 => ");
+    yellow();
+    ft_putnbr_fd(-1, 0);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => 10, 0 => ");
+    yellow();
+    ft_putnbr_fd(10, 0);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => -10, 0 => ");
+    yellow();
+    ft_putnbr_fd(-10, 0);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => 3333, 0 => ");
+    yellow();
+    ft_putnbr_fd(3333, 0);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => -3333, 0 => ");
+    yellow();
+    ft_putnbr_fd(-3333, 0);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => 42, 0 => ");
+    yellow();
+   	ft_putnbr_fd(42, 0);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => -42, 0 => ");
+    yellow();
+    ft_putnbr_fd(-42, 0);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => 2147483647, 0 => ");
+    yellow();
+    ft_putnbr_fd(2147483647, 0);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => -2147483648, 0 => ");
+    yellow();
+    ft_putnbr_fd(-2147483648, 0);
+    bgreen();
+    ft_putstr("\nft_putnbr_fd => 0123, 0 (this is octal) => ");
+    yellow();
+    ft_putnbr_fd(0123, 0);
+    c_reset();
+    ft_putstr("\n");
+    
+    testn(29);
+    green();
+    char ft_memset_src[50] = "GeeksForGeeks is for programming geeks.";
+    ft_putstr("\nft_memset => Before memset(): ");
+    ft_putendl(ft_memset_src);
+    // Fill 8 characters starting from str[13] with '.'
+    red();
+    ft_memset(ft_memset_src + 13, '.', 8);
+    ft_putstr("ft_memset => After memset():  ");
+    ft_putendl(ft_memset_src);
+    
+    green();
+    char ft_memset_src2[50] = "Leopoldo Hernandez Oliva";
+    ft_putstr("\nft_memset => Before memset(): ");
+    ft_putendl(ft_memset_src2);
+    // Fill 8 characters starting from str[13] with '.'
+    red();
+    ft_memset(ft_memset_src2 + 9, '#', 9);
+    ft_putstr("ft_memset => After memset():  ");
+    ft_putendl(ft_memset_src2);
+    c_reset();
+    
+    testn(30);
+    
+    green();
+    char ft_bzero_src[50] = "GeeksForGeeks is for programming geeks.";
+    ft_putstr("\nft_bzero => Before ft_bzero(): ");
+    ft_putendl(ft_bzero_src);
+    // Fill 8 characters starting from str[13] with '.'
+    red();
+    ft_bzero(ft_bzero_src + 13, 8);
+    ft_putstr("ft_bzero => After ft_bzero():  ");
+    ft_putendl(ft_bzero_src);
+    
+    green();
+    char ft_bzero_src2[50] = "Leopoldo Hernandez Oliva";
+    ft_putstr("\nft_bzero => Before bzero(): ");
+    ft_putendl(ft_bzero_src2);
+    // Fill 8 characters starting from str[13] with '.'
+    red();
+    ft_bzero(ft_bzero_src2 + 9, 9);
+    ft_putstr("ft_bzero => After bzero():  ");
+    ft_putendl(ft_bzero_src2);
+    c_reset();
+    
+    testn(31);
+    green();
+    char ft_memcpy_src[50] = "GeeksForGeeks is for programming geeks.";
+    char ft_memcpy_dst[50];
+    ft_putstr("\ft_memcpy => (in source) 'GeeksForGeeks is for programming geeks. :");
+    ft_putendl(ft_memcpy_src);
+    // Fill 8 characters starting from str[13] with '.'
+    red();
+    ft_memcpy(ft_memcpy_dst, ft_memcpy_src, 13);
+    ft_putstr("ft_memcpy => (in destination) => 13 bytes copied:  ");
+    ft_putendl(ft_memcpy_dst);
+    
+    green();
+    char ft_memcpy_src2[50] = "Leopoldo Hernandez Oliva";
+    char ft_memcpy_dst2[50];
+    ft_putstr("\nft_memcpy => (in source) : ");
+    ft_putendl(ft_memcpy_src2);
+    // Fill 8 characters starting from str[13] with '.'
+    red();
+    ft_memcpy(ft_memcpy_dst2, ft_memcpy_src2, 9);
+    ft_putstr("ft_memcpy => (in destination) => 9 bytes copied: ");
+    ft_putendl(ft_memcpy_dst2);
+    c_reset();
+
+    
+    
+    /*
 	 testn(-1);
 	 printf("ft_isprime => '2'            => 'TRUE', %s\n", true_false(ft_isprime(2)));
 	 printf("ft_isprime => '3'            => 'TRUE', %s\n", true_false(ft_isprime(3)));
@@ -494,7 +721,7 @@ int		main(void)
 	ft_putendl("BOLD CYAN");
 	c_reset();
 	ft_putendl("RESET TO WHITE");
-
+*/
 
 		return (0);
 }
