@@ -1,28 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memccpy.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lhernand <lhernand@student.us.org>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/28 06:15:32 by lhernand          #+#    #+#             */
-/*   Updated: 2017/09/28 16:33:22 by lhernand         ###   ########.fr       */
+/*   Created: 2017/09/28 16:48:19 by lhernand          #+#    #+#             */
+/*   Updated: 2017/09/28 17:10:38 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memccpy(void *restrict dst, const void *restrict src, int c, size_t n)
+int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	int i;
-	
+
 	i = 0;
-	while (i < n)
+	while (n > i)
 	{
-		(((unsigned char *)dst)[i]) = (((unsigned char *)src)[i]);
-		if (((unsigned char *)src)[i] == (unsigned char)c)
-			return (&((unsigned char *)dst)[i + 1]);		
+		if (((unsigned char *)s1)[i] != ((unsigned char *)s2)[i])
+			return (((unsigned char *)s1)[i] - ((unsigned char *)s2)[i]);
 		i++;
 	}
-	return (NULL);
+	return (0);
 }
