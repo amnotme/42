@@ -1,21 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_strdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
+/*   By: lhernand <lhernand@student.us.org>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/25 09:41:50 by lhernand          #+#    #+#             */
-/*   Updated: 2017/10/17 21:37:36 by lhernand         ###   ########.fr       */
+/*   Created: 2017/10/17 21:53:53 by lhernand          #+#    #+#             */
+/*   Updated: 2017/10/17 21:57:44 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_tolower(int c)
+void		ft_strdel(char **as)
 {
-	if ((c >= 'A') && (c <= 'Z'))
-		return (c + 32);
-	else
-		return (c);
+	if (as)
+	{
+		free(*as);
+		*as = NULL;
+	}
 }

@@ -1,21 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_strnequ.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
+/*   By: lhernand <lhernand@student.us.org>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/25 09:41:50 by lhernand          #+#    #+#             */
-/*   Updated: 2017/10/17 21:37:36 by lhernand         ###   ########.fr       */
+/*   Created: 2017/10/17 22:47:54 by lhernand          #+#    #+#             */
+/*   Updated: 2017/10/17 22:50:03 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_tolower(int c)
+int		ft_strnequ(const char *s1, const char *s2, size_t n)
 {
-	if ((c >= 'A') && (c <= 'Z'))
-		return (c + 32);
-	else
-		return (c);
+	if (s1 && s2 && n > 0)
+	{
+		if (!ft_strcmp(s1, s2))
+			return (1);
+		n--;
+	}
+	return (0);
 }

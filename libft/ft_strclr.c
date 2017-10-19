@@ -1,21 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_strclr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
+/*   By: lhernand <lhernand@student.us.org>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/25 09:41:50 by lhernand          #+#    #+#             */
-/*   Updated: 2017/10/17 21:37:36 by lhernand         ###   ########.fr       */
+/*   Created: 2017/10/17 21:58:13 by lhernand          #+#    #+#             */
+/*   Updated: 2017/10/17 22:02:46 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_tolower(int c)
+void		ft_strclr(char *s)
 {
-	if ((c >= 'A') && (c <= 'Z'))
-		return (c + 32);
-	else
-		return (c);
+	int i;
+
+	i = 0;
+	if (s)
+	{
+		while (s[i])
+			s[i++] = '\0';
+	}
 }
