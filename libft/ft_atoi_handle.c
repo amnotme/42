@@ -1,35 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   ft_atoi_handle.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
+/*   By: lhernand <lhernand@student.us.42.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/25 09:36:22 by lhernand          #+#    #+#             */
-/*   Updated: 2017/10/19 20:07:05 by lhernand         ###   ########.fr       */
+/*   Created: 2017/10/19 19:44:25 by lhernand          #+#    #+#             */
+/*   Updated: 2017/10/19 20:00:42 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		*ft_strcat(char *s1, char const *s2)
+void		ft_atoi_handle(const char *s, int *i)
 {
-	int		i;
-	int 	l;
-	char 	*ptr;
-
-	i = 0;
-	l = 0;
-	ptr = s1;
-	while (s1[l] != '\0')
-		l++;
-	while (s2[i] != '\0')
-	{
-		s1[l] = s2[i];
-		i++;
-		l++;
-	}
-	s1[l] = '\0';
-	s1 = ptr;
-	return (s1);	
-}
+	while ((s[*i] == ' ') || (s[*i] == '\v') || (s[*i] == '\t') ||
+			(s[*i] == '\f') || (s[*i] == '\r') || (s[*i] == '\n'))
+		(*i)++;
+}   

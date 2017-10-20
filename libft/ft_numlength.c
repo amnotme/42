@@ -1,32 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_numlength.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/25 17:05:49 by lhernand          #+#    #+#             */
-/*   Updated: 2017/10/19 20:03:42 by lhernand         ###   ########.fr       */
+/*   Created: 2017/10/18 22:15:49 by lhernand          #+#    #+#             */
+/*   Updated: 2017/10/19 19:30:50 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+size_t		ft_numlength(int num, int base)
 {
-	int i;
-	int l;
+	size_t	l;
 
 	l = 0;
-	while ((dst[l] != '\0') && (l < size))
+	if (num == 0)
+		return (1);
+	if (num < 0 && base == 10)
 		l++;
-	i = l;
-	while ((src[l - i]) && (l + 1 < size))
+	while (num)
 	{
-		dst[l] = src[l - i];
+		num = num / base;
 		l++;
 	}
-	if (i < size)
-		dst[l] = '\0';
-	return (i + ft_strlen(src));
+	return (l);
 }

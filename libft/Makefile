@@ -6,7 +6,7 @@
 #    By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/25 09:33:34 by lhernand          #+#    #+#              #
-#    Updated: 2017/10/17 22:33:33 by lhernand         ###   ########.fr        #
+#    Updated: 2017/10/19 20:15:46 by lhernand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,8 +18,8 @@ OBJECTS = *.o
 CFILES = *.c
 HEADERS = libft.h
 
-exec: all
-	@$(CC) -I. -o $(EXEC) $(CFILES)
+#exec: all
+#	@$(CC) -I. -o $(EXEC) $(CFILES)
 
 all: $(NAME)
 
@@ -33,6 +33,7 @@ clean:
 	@/bin/rm -f $(OBJECTS)
 
 fclean:
-	@/bin/rm -f $(OBJECTS) $(NAME) $(EXEC)
+	@/bin/rm -f $(OBJECTS) $(NAME) 
+#	$(EXEC)
 
 re: fclean all

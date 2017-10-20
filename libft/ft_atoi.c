@@ -1,5 +1,4 @@
 /* ************************************************************************** */
-/*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
@@ -12,14 +11,6 @@
 
 #include "libft.h"
 
-
-void static	handle_special_chars(char const *s, int *i)
-{
-	while ((s[*i] == ' ') || (s[*i] == '\v') || (s[*i] == '\t') ||
-			(s[*i] == '\f') || (s[*i] == '\r') || (s[*i] == '\n'))
-		(*i)++;
-}	
-
 int		ft_atoi(const char *str)
 {
 	int i;
@@ -29,7 +20,7 @@ int		ft_atoi(const char *str)
 	i = 0;
 	n = 0;
 	sign = 1;
-	handle_special_chars(str, &i);
+	ft_atoi_handle(str, &i);
 	if (str[i] == '-')
 	{
 		if ((str[i + 1] == '-') || (str[i + 1] == '+'))

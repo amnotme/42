@@ -1,32 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_wl.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/25 17:05:49 by lhernand          #+#    #+#             */
-/*   Updated: 2017/10/19 20:03:42 by lhernand         ###   ########.fr       */
+/*   Created: 2017/10/18 21:45:23 by lhernand          #+#    #+#             */
+/*   Updated: 2017/10/19 19:23:56 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+size_t			ft_wl(const char *s, char c)
 {
-	int i;
-	int l;
+	unsigned int 	i;
+	size_t			l;
 
+	i = 0;
 	l = 0;
-	while ((dst[l] != '\0') && (l < size))
+	while (s[i] == c)
+		i++;
+	while (s[i] != c && s[i++])
 		l++;
-	i = l;
-	while ((src[l - i]) && (l + 1 < size))
-	{
-		dst[l] = src[l - i];
-		l++;
-	}
-	if (i < size)
-		dst[l] = '\0';
-	return (i + ft_strlen(src));
+	return (l);
 }
