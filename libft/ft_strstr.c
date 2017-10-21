@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 19:08:21 by lhernand          #+#    #+#             */
-/*   Updated: 2017/09/28 02:17:34 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/10/21 01:43:49 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ char		*ft_strstr(const char *big, const char *little)
 	z = 0;
 	i = 0;
 	j = 0;
-
 	if (!little[0])
 		return ((char *)&big[i]);
 	while (big[i])

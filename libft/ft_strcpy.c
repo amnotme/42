@@ -6,16 +6,16 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 09:41:25 by lhernand          #+#    #+#             */
-/*   Updated: 2017/09/25 09:41:27 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/10/21 01:59:16 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcpy(char *dst, char const *src)
+char		*ft_strcpy(char *dst, char const *src)
 {
 	int		i;
-	char 	*ptr;
+	char	*ptr;
 
 	ptr = dst;
 	i = 0;
@@ -27,5 +27,4 @@ char	*ft_strcpy(char *dst, char const *src)
 	dst[i] = '\0';
 	dst = ptr;
 	return (dst);
-
 }

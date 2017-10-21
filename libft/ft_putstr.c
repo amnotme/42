@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 09:34:36 by lhernand          #+#    #+#             */
-/*   Updated: 2017/09/25 13:54:33 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/10/21 01:30:03 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void		ft_putstr(char const *s)
 {
 	int i;
-	
+
 	i = 0;
 	if (!s)
 		return ;
