@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 09:36:22 by lhernand          #+#    #+#             */
-/*   Updated: 2017/10/19 20:07:05 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/10/21 03:56:34 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 char		*ft_strcat(char *s1, char const *s2)
 {
 	int		i;
-	int 	l;
-	char 	*ptr;
+	int		l;
+	char	*ptr;
 
 	i = 0;
 	l = 0;
@@ -31,5 +31,5 @@ char		*ft_strcat(char *s1, char const *s2)
 	}
 	s1[l] = '\0';
 	s1 = ptr;
-	return (s1);	
+	return (s1);
 }

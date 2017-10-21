@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.us.org>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/27 21:34:22 by lhernand          #+#    #+#             */
-/*   Updated: 2017/09/27 22:19:34 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/10/21 03:55:51 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	write(fd, &c, 1); 
+	write(fd, &c, 1);
 }

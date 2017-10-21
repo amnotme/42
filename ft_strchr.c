@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 15:24:53 by lhernand          #+#    #+#             */
-/*   Updated: 2017/09/25 15:49:33 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/10/21 03:59:19 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char		*ft_strchr(const char *s, int c)
 {
-	int i;
-	char ch;
+	int		i;
+	char	ch;
 
 	i = 0;
 	ch = c;

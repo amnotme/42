@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 21:10:12 by lhernand          #+#    #+#             */
-/*   Updated: 2017/10/18 21:39:08 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/10/21 03:55:28 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char		*ft_strtrim(char const *s)
 {
-	int 	i;
+	int		i;
 	int		j;
 	char	*str;
 
@@ -29,6 +29,6 @@ char		*ft_strtrim(char const *s)
 		j -= 1;
 	if (!(str = ft_strnew(j + 1)))
 		return (NULL);
-	ft_strncpy(str, (s + i) , (j + 1));
+	ft_strncpy(str, (s + i), (j + 1));
 	return (str);
 }
