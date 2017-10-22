@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 09:37:45 by lhernand          #+#    #+#             */
-/*   Updated: 2017/10/21 03:54:47 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/10/21 19:59:45 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int					ft_strncmp(char const *s1, char const *s2, size_t n)
 {
-	int				i;
+	size_t			i;
 	unsigned char	*str1;
 	unsigned char	*str2;
 

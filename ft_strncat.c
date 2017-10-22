@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 09:35:08 by lhernand          #+#    #+#             */
-/*   Updated: 2017/10/21 03:53:11 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/10/21 19:59:12 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char		*ft_strncat(char *s1, char const *s2, size_t n)
 {
-	int		l;
-	int		i;
+	size_t	l;
+	size_t	i;
 	char	*ptr;
 
 	l = 0;

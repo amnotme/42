@@ -6,15 +6,15 @@
 /*   By: lhernand <lhernand@student.us.org>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/28 06:15:32 by lhernand          #+#    #+#             */
-/*   Updated: 2017/10/21 01:58:19 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/10/21 19:55:27 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
+void		*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
-	int i;
+	size_t	i;
 
 	i = 0;
 	while (i < n)

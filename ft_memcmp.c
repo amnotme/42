@@ -6,15 +6,15 @@
 /*   By: lhernand <lhernand@student.us.org>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/28 16:48:19 by lhernand          #+#    #+#             */
-/*   Updated: 2017/09/28 17:10:38 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/10/21 19:56:07 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_memcmp(const void *s1, const void *s2, size_t n)
+int			ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	int i;
+	size_t	i;
 
 	i = 0;
 	while (n > i)

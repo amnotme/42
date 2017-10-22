@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 09:35:28 by lhernand          #+#    #+#             */
-/*   Updated: 2017/10/21 02:56:45 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/10/21 20:23:41 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,10 @@ typedef	struct		s_list
 	size_t			content_size;
 	struct s_list	*next;
 }					t_list;
+
+/*
+** Below are the main functions for the lib
+*/
 
 size_t				ft_strlcat(char *dst, const char *src, size_t size);
 size_t				ft_strlen(char const *s);
@@ -76,12 +80,22 @@ int					ft_isascii(int c);
 int					ft_isprint(int c);
 int					ft_toupper(int c);
 int					ft_tolower(int c);
+
+/*
+** Below are the t_list functions
+*/
+
 t_list				*ft_lstnew(void const *content, size_t content_size);
 void				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
+
+/*
+** Below are the extra functions
+*/
+
 int					ft_iswspace(int c);
 int					ft_isprime(unsigned int num);
 int					ft_even(int num);
@@ -99,7 +113,6 @@ void				magenta(void);
 void				bmagenta(void);
 void				cyan(void);
 void				bcyan(void);
-void				c_reset(void);
 void				c_reset(void);
 void				ft_atoi_handle(char const *s, int *i);
 size_t				ft_wc(const char *s, char c);

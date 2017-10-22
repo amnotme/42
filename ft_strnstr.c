@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.us.org>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/27 21:12:49 by lhernand          #+#    #+#             */
-/*   Updated: 2017/10/21 02:52:37 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/10/21 20:00:42 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char		*ft_strnstr(const char *big, const char *little, size_t l)
 {
-	int i;
-	int j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	j = 0;

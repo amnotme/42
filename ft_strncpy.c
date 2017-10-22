@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 09:37:22 by lhernand          #+#    #+#             */
-/*   Updated: 2017/10/21 01:45:19 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/10/21 20:00:11 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char		*ft_strncpy(char *dst, char const *src, size_t len)
 {
-	int		i;
+	size_t	i;
 	char	*ptr;
 
 	ptr = dst;
