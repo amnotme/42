@@ -6,7 +6,7 @@
 #    By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/25 09:33:34 by lhernand          #+#    #+#              #
-#    Updated: 2017/10/21 20:18:26 by lhernand         ###   ########.fr        #
+#    Updated: 2017/10/21 20:38:15 by lhernand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -98,20 +98,22 @@ CFILES = bblue.c \
 #exec: all
 #	@$(CC) -I. -o $(EXEC) $(CFILES)
 
-all: $(NAME)
-
 OBJECTS = $(CFILES:.c=.o)
 
-$(NAME): $(OBJECTS)
+all: $(NAME)
+
+$(NAME):
 	@$(CC) $(CFLAGS) -c $(CFILES)
-	@ar rcs $(NAME) $(OBJECTS)
-	ranlib $(NAME)	
+	@ar rc $(NAME) $(OBJECTS)
+	@ranlib $(NAME)	
 
 clean:
 	@/bin/rm -f $(OBJECTS)
 
 fclean:
-	@/bin/rm -f $(OBJECTS) $(NAME) $(EXEC)
+	@/bin/rm -f $(OBJECTS) $(NAME) 
+#	$(EXEC)
 
 re: fclean all
 
+.PHONY: all, clean, fclean, re
