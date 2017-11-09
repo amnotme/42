@@ -6,11 +6,16 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/21 03:57:41 by lhernand          #+#    #+#             */
-/*   Updated: 2017/10/21 04:00:12 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/11/09 12:56:03 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** The ft_atoi() function converts the initial portion of the string pointed to
+** by str to int representation.
+*/
 
 int		ft_atoi(const char *str)
 {
