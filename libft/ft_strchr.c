@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 15:24:53 by lhernand          #+#    #+#             */
-/*   Updated: 2017/11/09 12:32:04 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/11/09 12:35:28 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 /*
 ** The ft_strchr() function locates the first occurrence of c (converted to 
 ** a char) in the string pointed to by s.  The terminating null character is 
-** considered to be part of the string; therefore if c is `\0', the functions 
-** locate the terminating `\0'.
+** considered to be part of the string; therefore if c is `\0', the function 
+** locates the terminating `\0'.
 **
 ** ft_strchr() returns a pointer to the located character, or NULL if the 
 ** character does not appear in the string.
