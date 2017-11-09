@@ -6,11 +6,26 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 09:35:08 by lhernand          #+#    #+#             */
-/*   Updated: 2017/10/21 19:59:12 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/11/09 01:55:56 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** The ft_strcat() and ft_strncat() functions append a copy of the 
+** null-terminated string s2 to the end of the null-terminated string s1, 
+** then add a terminating `\0'.  The string s1 must have sufficient space to
+** hold the result.
+** 
+** The ft_strncat() function appends not more than n characters from s2, 
+** and then adds a terminating `\0'.
+**
+** The source and destination strings should not overlap, as the behavior 
+** is undefined.
+**
+** The ft_strcat() and ft_strncat() functions return the pointer s1.
+*/
 
 char		*ft_strncat(char *s1, char const *s2, size_t n)
 {
