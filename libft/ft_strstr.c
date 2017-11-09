@@ -6,11 +6,20 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 19:08:21 by lhernand          #+#    #+#             */
-/*   Updated: 2017/10/21 01:43:49 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/11/09 12:41:53 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** The ft_strstr() function locates the first occurrence of the null-terminated
+** string little in the null-terminated string big.
+**
+** If little is an empty string, big is returned; if little occurs nowhere in
+** big, NULL is returned; otherwise a pointer to the first character of the
+** first occurrence of little is returned.
+*/
 
 char		*ft_strstr(const char *big, const char *little)
 {
