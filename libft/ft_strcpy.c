@@ -6,11 +6,21 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 09:41:25 by lhernand          #+#    #+#             */
-/*   Updated: 2017/10/21 01:59:16 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/11/09 01:45:59 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** The ft_strcpy() functions copy the string src to dst (including the 
+** terminating `\0' character.)
+**
+** The source and destination strings should not overlap, as the behavior is 
+** undefined.
+**
+** The ft_strcpy() function returns dst.
+*/
 
 char		*ft_strcpy(char *dst, char const *src)
 {
