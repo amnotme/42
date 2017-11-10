@@ -6,11 +6,18 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/20 21:42:08 by lhernand          #+#    #+#             */
-/*   Updated: 2017/10/20 21:45:58 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/11/09 17:33:38 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Iterates a list lst and applies the function f to each link to
+** create a “fresh” list (using malloc(3)) resulting from the successive
+** applications of f. If the allocation fails, the function
+** returns NULL.
+*/
 
 void		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
