@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 09:54:07 by lhernand          #+#    #+#             */
-/*   Updated: 2017/10/20 22:40:39 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/11/09 18:16:28 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -576,7 +576,7 @@ int		main(void)
 	ft_memset(ft_memset_src2 + 9, '#', 9);
 	ft_putstr("ft_memset => After memset():  ");
 	ft_putendl(ft_memset_src2);
-	c_reset();fi
+	c_reset();
 
 	testn(30);
 
