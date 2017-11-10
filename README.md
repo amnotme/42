@@ -1,13 +1,16 @@
-# libft  
-
-libft is my implementation of the standard library as a project
-for 42.  You will find a unit-test that you can run.  Look at the
-README.md inside for more info. An implemented main.c located
-outside of the unit test is my implementation of all the functions
-and a few other ones. (pending to finish).
-
-------------------------------------------------------------------
 # frozen  
 
 frozen is an implementation of an IRC using golang to create a client chat. 
 
+------------------------------------------------------------------
+
+# libft  and libft-unit-test
+
+libft is my implementation of the standard library as a project
+for 42. 
+
+libft-unit-test is a testing suite built by 42 students to test the libft  
+project.  You may look inside the libft-unit-test folder to see installation  
+and how to run a check on the libft project.
+
+------------------------------------------------------------------
