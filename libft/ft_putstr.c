@@ -6,11 +6,15 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 09:34:36 by lhernand          #+#    #+#             */
-/*   Updated: 2017/10/21 01:30:03 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/11/09 16:26:13 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Outputs the string s to the standard output.
+*/
 
 void		ft_putstr(char const *s)
 {
