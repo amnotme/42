@@ -6,11 +6,15 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 14:40:10 by lhernand          #+#    #+#             */
-/*   Updated: 2017/09/25 14:41:12 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/11/09 16:37:13 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Makes the text yellow.
+*/
 
 void	yellow(void)
 {

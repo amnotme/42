@@ -6,11 +6,15 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 14:38:54 by lhernand          #+#    #+#             */
-/*   Updated: 2017/09/25 14:39:27 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/11/09 16:34:20 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Makes the text bold green.
+*/
 
 void	bgreen(void)
 {

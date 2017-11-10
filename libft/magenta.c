@@ -6,11 +6,15 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 14:44:02 by lhernand          #+#    #+#             */
-/*   Updated: 2017/09/25 14:44:20 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/11/09 16:36:37 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Makes the text magenta.
+*/
 
 void	magenta(void)
 {

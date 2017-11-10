@@ -6,11 +6,15 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 14:15:19 by lhernand          #+#    #+#             */
-/*   Updated: 2017/09/25 14:39:11 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/11/09 16:36:52 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Makes the text color red.
+*/
 
 void	red(void)
 {

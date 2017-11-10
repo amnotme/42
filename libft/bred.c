@@ -6,11 +6,15 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 14:25:55 by lhernand          #+#    #+#             */
-/*   Updated: 2017/09/25 14:39:19 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/11/09 16:34:36 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Makes the text bold red.
+*/
 
 void	bred(void)
 {

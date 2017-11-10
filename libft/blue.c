@@ -6,11 +6,15 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 14:41:37 by lhernand          #+#    #+#             */
-/*   Updated: 2017/09/25 14:41:55 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/11/09 16:35:03 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Makes the text regular blue.
+*/
 
 void	blue(void)
 {

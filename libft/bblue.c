@@ -6,11 +6,15 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 14:42:09 by lhernand          #+#    #+#             */
-/*   Updated: 2017/09/25 14:42:25 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/11/09 16:32:43 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Makes text bold blue.
+*/
 
 void	bblue(void)
 {
