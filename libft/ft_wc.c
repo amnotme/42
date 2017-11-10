@@ -6,11 +6,20 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 21:41:47 by lhernand          #+#    #+#             */
-/*   Updated: 2017/10/18 21:44:01 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/11/09 16:13:41 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** The ft_wc() is a word count function that counts the number of words in a 
+** given string.
+**
+** Returns the number of word characters.
+**
+** This is a helper function to ft_strplit().
+*/
 
 size_t		ft_wc(const char *s, char c)
 {
