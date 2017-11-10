@@ -6,11 +6,17 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/18 22:15:49 by lhernand          #+#    #+#             */
-/*   Updated: 2017/10/19 19:30:50 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/11/09 16:23:45 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Takes a number and reads the length of the number passed with the base given.
+**
+** Returns l as the length of the number.
+*/
 
 size_t		ft_numlength(int num, int base)
 {
