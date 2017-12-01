@@ -13,4 +13,10 @@ My implementation of the standard library as a project for 42.
 A testing script built by 42 students to test the libft  
 project.
 
-------------------------------------------------------------------
+------------------------------------------------------------------  
+
+# Summer In Sanfrancisco  
+
+A dash project where students are given 42 minutes to complete.  
+
+-----------------------------------------------------------------
