@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/12 20:57:18 by lhernand          #+#    #+#             */
-/*   Updated: 2017/12/13 03:29:39 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/12/14 01:38:05 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,25 +36,23 @@ static char		*ft_strjoin(const char *s1, const char *s2)
 {
 	int			i;
 	int			j;
-	int			z;
 	char		*s3;
+	char		*ptr;
 
 	i = 0;
 	j = 0;
-	z = 0;
 	while (s1[i])
 		i++;
 	while (s2[j])
 		j++;
 	if (!s1 || !s2 || !(s3 = (char *)malloc(sizeof(char) * (i + j + 1))))
 		return (NULL);
-	i = 0;
-	j = 0;
-	while (s1[i])
-		s3[z++] = s1[i++];
-	while (s2[j])
-		s3[z++] = s2[j++];
-	s3[z] = '\0';
+	ptr = s3;
+	while (*s1 != '\0')
+		*ptr++ = *s1++;
+	while (*s2 != '\0')
+		*ptr++ = *s2++;
+	*ptr = '\0';
 	return (s3);
 }
 
@@ -75,6 +73,8 @@ static int		valid_line(char **stk, char **line)
 	tmp_stk = &chars_in_stk[pos];
 	*tmp_stk = '\0';
 	*line = ft_strdup(*stk);
+	free(chars_in_stk);
+	chars_in_stk = NULL;
 	*stk = ft_strdup(tmp_stk + 1);
 	return (1);
 }
@@ -111,20 +111,20 @@ int				get_next_line(const int fd, char **line)
 	int			ret;
 	int			i;
 
-	i = 0;
-	if (!(hp = (char *)malloc(sizeof(char) * BUFF_SIZE + 1)) || fd < 0 || !line
-			|| fd > DESCRIPTORS || (read(fd, stk[fd], 0) < 0))
+	if (!line || fd < 0 || fd >= DESCRIPTORS || (read(fd, stk[fd], 0) < 0) \
+			|| !(hp = (char *)malloc(sizeof(char) * BUFF_SIZE + 1)))
 		return (-1);
 	if (stk[fd])
 		if (valid_line(&stk[fd], line))
 			return (1);
+	i = 0;
 	while (i < BUFF_SIZE)
 		hp[i++] = '\0';
 	ret = read_file(fd, hp, &stk[fd], line);
 	free(hp);
-	if (stk[fd][0] == '\0' || stk[fd] == NULL || ret != 0)
+	if (ret != 0 || stk[fd] == NULL || stk[fd][0] == '\0')
 	{
-		if ((ret == 0) && (*line))
+		if (ret == 0 && *line)
 			*line = NULL;
 		return (ret);
 	}
