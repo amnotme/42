@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/13 02:28:51 by lhernand          #+#    #+#             */
-/*   Updated: 2017/12/13 16:53:48 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/12/14 12:16:56 by leopoldoh        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 # include <sys/stat.h>
 # include <stdlib.h>
 # include <unistd.h>
+
+
 
 # define BUFF_SIZE 8
 # define DESCRIPTORS 4864
