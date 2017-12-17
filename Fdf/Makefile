@@ -6,7 +6,7 @@
 #    By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/12/15 23:27:35 by lhernand          #+#    #+#              #
-#    Updated: 2017/12/16 22:25:18 by leopoldoh        ###   ########.fr        #
+#    Updated: 2017/12/16 23:27:24 by leopoldoh        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,10 +32,10 @@ OBJECTS = $(CFILES:.c=.o)
 all: $(NAME)
 
 $(NAME):
-	$(LIBM)
-	$(MLXM)
+	@$(LIBM)
+	@$(MLXM)
 	@echo "\033[32mLibft Successfully Compiled\033[0m"
-	$(CC) $(CFLAGS) -o $(NAME) -I $(MLX_FRA) $(CFILES)
+	@$(CC) $(CFLAGS) -o $(NAME) -I $(MLX_FRA) $(CFILES)
 	@echo "\033[41m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\033[0m"
 	@echo "\033[41m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\033[0m"
 	@echo "\033[41m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\033[0m"
@@ -66,7 +66,7 @@ clean:
 	@echo "\033[32m.o Files From ./ Successfully Removed\033[0m"
 
 fclean:
-	$(LIBF)
+	@$(LIBF)
 	@echo "\033[32m.o Files From libft/ and libft.a Successfully Removed\033[0m"
 	@/bin/rm -f $(OBJECTS) $(NAME)
 	@echo "\033[32m.o Files From libft/ and ./fdf Successfully Removed\033[0m"
