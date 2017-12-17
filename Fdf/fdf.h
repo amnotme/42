@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/15 23:28:41 by lhernand          #+#    #+#             */
-/*   Updated: 2017/12/16 18:52:49 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/12/16 22:25:43 by leopoldoh        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,5 @@
 # include <sys/stat.h>
 # include <math.h>
 # include <mlx.h>
-//# include "minilibx1/mlx.h"
 
 #endif

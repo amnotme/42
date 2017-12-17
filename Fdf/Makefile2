@@ -6,21 +6,21 @@
 #    By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/12/15 23:27:35 by lhernand          #+#    #+#              #
-#    Updated: 2017/12/16 22:25:18 by leopoldoh        ###   ########.fr        #
+#    Updated: 2017/12/16 22:15:42 by leopoldoh        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 MAKE = make -C
 NAME = fdf
 LIB = libft
-MLX_LIB = minilibx2
-MLX_FRA = $(MLX_LIB)/ -L  minilibx2 -lmlx -framework OpenGL -framework AppKit
+MLX_LIB = minilibx
+MLX_FRA = $(MLX_LIB)/ -L  minilibx -lmlx -framework OpenGL -framework AppKit
 CFLAGS = -Wall -Wextra -Werror 
 CC = gcc
 
 CFILES = $(LIB)/libft.a \
 		 $(MLX_LIB)/libmlx.a \
-		 main2.c
+		 main.c
 
 LIBM = $(MAKE) $(LIB) re
 LIBC = $(MAKE) $(LIB) clean
