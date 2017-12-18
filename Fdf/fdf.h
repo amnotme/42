@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/15 23:28:41 by lhernand          #+#    #+#             */
-/*   Updated: 2017/12/16 22:25:43 by leopoldoh        ###   ########.fr       */
+/*   Updated: 2017/12/17 16:13:35 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include "libft/libft.h"
 # include "libft/get_next_line.h"
+# include "key_code.h"
 # include <unistd.h>
 # include <stdlib.h>
 # include <fcntl.h>
