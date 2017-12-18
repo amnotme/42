@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/17 16:10:57 by lhernand          #+#    #+#             */
-/*   Updated: 2017/12/17 16:13:08 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/12/17 17:43:01 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,5 +62,6 @@
 # define KEY_DOWN 125
 # define KEY_LEFT 123
 # define KEY_RIGHT 124
+# define KEY_ESC 53
 
 #endif
