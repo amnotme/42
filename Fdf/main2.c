@@ -6,7 +6,7 @@
 /*   By: leopoldohernandez <marvin@42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/16 22:31:33 by leopoldoh         #+#    #+#             */
-/*   Updated: 2017/12/17 02:03:06 by leopoldoh        ###   ########.fr       */
+/*   Updated: 2017/12/18 10:19:02 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,17 +38,21 @@ void                draw(void *mlx, void *win)
 {
     int x;
     int y;
-
-    y = 200;
-    while (y < 400)
+	int coord[12][2] = {
+		{0, 0}, {0, 1}, {0, 2}, {0, 3},
+		{1, 0}, {1, 1}, {1, 2}, {1, 3},
+		{2, 0}, {2, 1}, {2, 2}, {2, 3},
+		{3, 0}, {3, 1}, {3, 2}, {3, 3}
+	};
+	
+    y = 0;
+    while (y < 12)
     {
-        x = 200;
-        while (x < 400)
+        x = 0;
+        while (x < 2)
         {
-           // mlx_pixel_put(mlx, win, x, y, 0xFF00FF);
-            x++;
-            if (x % 15 == 0 && y % 15 == 0)
-                mlx_pixel_put(mlx, win, x , y, 0x00FF00);
+            mlx_pixel_put(mlx, win, coord[y][x] * 50 + 10 , coord[y][x] * 50 + 10, 0x00FF00);
+			x++;
         }
         y++;
         usleep(100);

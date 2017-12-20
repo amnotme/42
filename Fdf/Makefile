@@ -6,7 +6,7 @@
 #    By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/12/15 23:27:35 by lhernand          #+#    #+#              #
-#    Updated: 2017/12/17 00:47:15 by leopoldoh        ###   ########.fr        #
+#    Updated: 2017/12/18 10:48:25 by lhernand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,7 @@ $(NAME):
 	@$(LIBM)
 	@$(MLXM)
 	@echo "\033[32mLibft Successfully Compiled\033[0m"
-	@$(CC) $(CFLAGS) -o $(NAME) -I $(MLX_FRA) $(CFILES)
+	@$(CC) $(CFLAGS) -o $(NAME) -g -I $(MLX_FRA) $(CFILES)
 	@echo "\033[41m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\033[0m"
 	@echo "\033[41m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\033[0m"
 	@echo "\033[41m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\033[0m"
