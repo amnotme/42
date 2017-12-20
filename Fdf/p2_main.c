@@ -6,12 +6,14 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/19 19:32:40 by lhernand          #+#    #+#             */
-/*   Updated: 2017/12/19 20:15:39 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/12/20 09:36:21 by leopoldoh        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
+
+
 
 typedef struct		s_list
 {
