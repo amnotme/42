@@ -6,7 +6,7 @@
 /*   By: leopoldohernandez <marvin@42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/16 22:31:33 by leopoldoh         #+#    #+#             */
-/*   Updated: 2017/12/18 10:19:02 by lhernand         ###   ########.fr       */
+/*   Updated: 2017/12/27 03:52:40 by leopoldoh        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,14 @@ typedef struct      s_env
     void *win;
 }                   t_env;
 
+typedef struct      s_lst
+{
+    int             x;
+    int             y;
+    int             h;
+    int             w;
+    int             z;
+}
 int                 key_hook(int keycode, t_env *e)
 {
     ft_putstr("key pressed -> : ");
@@ -38,7 +46,7 @@ void                draw(void *mlx, void *win)
 {
     int x;
     int y;
-	int coord[12][2] = {
+	int coord[16][2] = {
 		{0, 0}, {0, 1}, {0, 2}, {0, 3},
 		{1, 0}, {1, 1}, {1, 2}, {1, 3},
 		{2, 0}, {2, 1}, {2, 2}, {2, 3},
