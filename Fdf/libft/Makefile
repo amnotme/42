@@ -6,7 +6,7 @@
 #    By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/25 09:33:34 by lhernand          #+#    #+#              #
-#    Updated: 2017/12/15 23:51:36 by lhernand         ###   ########.fr        #
+#    Updated: 2017/12/27 02:16:12 by leopoldoh        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -109,10 +109,10 @@ $(NAME):
 	@ranlib $(NAME)	
 
 clean:
-	@/bin/rm -f $(OBJECTS)
+	@/bin/rm -rf $(OBJECTS)
 
 fclean:
-	@/bin/rm -f $(OBJECTS) $(NAME) 
+	@/bin/rm -rf $(OBJECTS) $(NAME) 
 #	$(EXEC)
 
 re: fclean all
