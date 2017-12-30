@@ -6,7 +6,7 @@
 /*   By: leopoldohernandez <marvin@42.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/27 01:13:38 by leopoldoh         #+#    #+#             */
-/*   Updated: 2017/12/27 02:42:04 by leopoldoh        ###   ########.fr       */
+/*   Updated: 2017/12/29 18:47:13 by leopoldoh        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,7 +108,7 @@ int         main(int argc, char **argv)
         {
             w += get_width(line);
             if (get_width(line) != (w / h))
-                printf("calaqueo\n");
+                exit(1);
             printf("%s h-> %d w -> %d\n", line, h, (w / h));
             h++;
             free(line);
