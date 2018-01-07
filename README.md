@@ -19,7 +19,6 @@ project.
 
 A dash project where students are given 42 minutes to complete.  
 
-
 -----------------------------------------------------------------
 # Fillit  
 
