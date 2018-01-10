@@ -6,7 +6,7 @@
 #    By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/25 09:33:34 by lhernand          #+#    #+#              #
-#    Updated: 2017/10/21 20:38:15 by lhernand         ###   ########.fr        #
+#    Updated: 2018/01/09 15:08:39 by lhernand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,6 +35,7 @@ CFILES = bblue.c \
 		 ft_isprint.c \
 		 ft_iswspace.c \
 		 ft_itoa.c \
+		 ft_itoa_base.c \
 		 ft_lstadd.c \
 		 ft_lstdel.c \
 		 ft_lstdelone.c \

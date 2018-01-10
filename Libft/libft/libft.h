@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 09:35:28 by lhernand          #+#    #+#             */
-/*   Updated: 2017/10/21 20:23:41 by lhernand         ###   ########.fr       */
+/*   Updated: 2018/01/09 15:08:11 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ typedef	struct		s_list
 size_t				ft_strlcat(char *dst, const char *src, size_t size);
 size_t				ft_strlen(char const *s);
 char				*ft_itoa(int n);
+char				*ft_itoa_base(int value, int base);
 char				*ft_strdup(const char *s1);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strrchr(const char *s, int c);
