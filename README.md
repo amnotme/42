@@ -15,7 +15,7 @@ project.
 
 ------------------------------------------------------------------  
 
-# Summer In Sanfrancisco  
+# Summer In San Francisco  
 
 A dash project where students are given 42 minutes to complete.  
 
@@ -37,4 +37,14 @@ or line is to begin with.
 # FDF
 
 Fdf is an implemenation of a basic wireframe using the minilibx library.
+ 
+----------------------------------------------------------------- 
 
+# Ft_Latin
+
+----------------------------------------------------------------- 
+
+# Init
+
+----------------------------------------------------------------- 
+ 
