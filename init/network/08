@@ -1,0 +1,6 @@
+echo "\033[1;36mYes they are all similar"
+echo "they're being hosted by aws"
+echo "using myserver\033[0m"
+dig +short myserver slash16.org
+echo "\033[1;36mgoogle's server ->\033[0m"
+dig +short 8.8.8.8 slash16.org

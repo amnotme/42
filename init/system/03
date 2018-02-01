@@ -1,0 +1,1 @@
+echo "\033[0;36mYou'll need to change what's inside the hostname file in \033[0;31m/etc/hostname\033[0;36m to make it permanent\033[0m"

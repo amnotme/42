@@ -1,0 +1,1 @@
+echo "\033[0;36mIn Debian the cron package is installed as part of the base system, and will be running by default. Cron, as supplied in Debian, has two purposes: To run system jobs on a daily/weekly/monthly basis\033[0m"

@@ -1,0 +1,4 @@
+echo "\033[1;36mthe path to the file  that contains the dns server we are using"
+echo "can be found here ->\033[0m"
+echo "\033[0;36m/etc/resolv.conf\033[0m"
+cat /etc/resolv.conf

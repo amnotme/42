@@ -1,0 +1,9 @@
+echo "\033[1;36mI notice that they are all the same"
+echo "weather you use your internal server or an external server"
+echo "using myserver ->:\033[0m"
+
+dig +short myserver 42.fr
+echo "\033[1;36mthis is using google.com as the server ->:\033[0m"
+dig +short 8.8.8.8 42.fr
+
+

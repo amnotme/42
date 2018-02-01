@@ -1,0 +1,3 @@
+echo "\033[0;36mThis can be accomplished by simply adding a new line after everything in \033[0;31m/etc/hosts:\033[0m"
+echo "46.19.122.85 intra.42.fr\033[0m"
+echo "\033[0;36mThe first column contains the IP address and the second column contains the url.\033[0m"

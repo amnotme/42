@@ -1,0 +1,2 @@
+echo "\033[0;36mThe file that contains the local DNS entries is in ->\033[0;31m /etc/hosts\033[0m"
+cat /etc/hosts

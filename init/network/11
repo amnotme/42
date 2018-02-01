@@ -1,0 +1,4 @@
+echo "\033[1;36mWhen running traceroute the first two devices are the local devices while the third one is label as nat ->\033[0m"
+echo "\033[1;36mNAT\033[0m"
+echo "\033[0;36mStands for "Network Address Translation." NAT translates the IP addresses of computers in a local network to a single IP address. This address is often used by the router that connects the computers to the Internet.\033[0m"
+traceroute slash16.org

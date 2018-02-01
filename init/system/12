@@ -1,0 +1,1 @@
+du -ha --max-depth=1 /var
