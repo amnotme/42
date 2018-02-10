@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 09:35:28 by lhernand          #+#    #+#             */
-/*   Updated: 2017/12/15 23:54:21 by lhernand         ###   ########.fr       */
+/*   Updated: 2018/02/10 01:04:41 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,6 +97,7 @@ void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 ** Below are the extra functions
 */
 
+int					ft_degree(int angle);
 int					ft_iswspace(int c);
 int					ft_isprime(unsigned int num);
 int					ft_even(int num);

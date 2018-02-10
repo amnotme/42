@@ -6,7 +6,7 @@
 #    By: lhernand <lhernand@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/25 09:33:34 by lhernand          #+#    #+#              #
-#    Updated: 2017/12/27 02:16:12 by leopoldoh        ###   ########.fr        #
+#    Updated: 2018/02/10 01:04:00 by lhernand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +26,7 @@ CFILES = bblue.c \
 		 ft_atoi.c \
 		 ft_atoi_handle.c \
 		 ft_bzero.c \
+		 ft_degree.c \
 		 ft_even.c \
 		 ft_isalnum.c \
 		 ft_isalpha.c \

@@ -6,7 +6,7 @@
 #    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/06 23:03:29 by lhernand          #+#    #+#              #
-#    Updated: 2018/02/07 10:35:53 by lhernand         ###   ########.fr        #
+#    Updated: 2018/02/10 01:50:17 by lhernand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,8 @@ CC = gcc
 
 CFILES = $(LIB)/libft.a \
 		 $(MLX_LIB)/libmlx.a \
-		 main.c
+		 main.c \
+		 step_1_hooks.c
 
 LIBM = $(MAKE) $(LIB) re
 LIBC = $(MAKE) $(LIB) clean
