@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/10 01:28:57 by lhernand          #+#    #+#             */
-/*   Updated: 2018/02/10 02:12:04 by lhernand         ###   ########.fr       */
+/*   Updated: 2018/02/11 04:08:52 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,16 @@ static int		pressed_hook(int key, t_main *main)
 	return (0);
 }
 
+static int		unpressed_hook(int key, t_main *main)
+{
+	if (key == KEY_ESC)
+		esc_hook(main);
+	return (0);
+}
 
 void			hooks(t_main *main)
 {
 	mlx_hook(main->mlx.win, 2, 0, pressed_hook, main);
-//	mlx_hook(main->mlx.win, 17, 0, esc_hook, main); ???
+	mlx_hook(main->mlx.win, 3, 0, unpressed_hook, main);
+	mlx_hook(main->mlx.win, 17, 0, esc_hook, main);
 }
