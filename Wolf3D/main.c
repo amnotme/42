@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/07 10:37:03 by lhernand          #+#    #+#             */
-/*   Updated: 2018/02/11 04:08:53 by lhernand         ###   ########.fr       */
+/*   Updated: 2018/02/12 00:45:15 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,9 @@ static t_main			*setup(void)
 	main->mlx.data = mlx_new_image(main->mlx.mlx, W_WIN, H_WIN);
 	main->img.img = (int *)mlx_get_data_addr(main->mlx.data, &main->img.bp, \
 		&main->img.size, &main->img.endian); //might need to cast it to int *	
+	main->player.angle = 110.0;
+	main->player.cam_x = 5.0;
+	main->player.cam_y = 5.0;
 	return (main);
 }
 

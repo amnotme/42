@@ -6,7 +6,7 @@
 #    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/06 23:03:29 by lhernand          #+#    #+#              #
-#    Updated: 2018/02/11 03:49:50 by lhernand         ###   ########.fr        #
+#    Updated: 2018/02/12 00:42:48 by lhernand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,8 @@ CFILES = $(LIB)/libft.a \
 		 $(MLX_LIB)/libmlx.a \
 		 main.c \
 		 step_1_hooks.c \
-		 step_2_setmap.c
+		 step_2_setmap.c \
+		 step_3_raycast.c
 
 LIBM = $(MAKE) $(LIB) re
 LIBC = $(MAKE) $(LIB) clean
