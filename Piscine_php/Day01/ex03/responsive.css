@@ -1,0 +1,165 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: 10% repeat(18, 1fr) 10%;
+  grid-template-rows: 2fr repeat(13, 1fr) 2fr;
+}
+
+.color0 {
+  transition: background-color 1s ease;
+  -o-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  background-color: #51B3BA;
+}
+.color0:hover { background-color: #61B3BA80;}
+.color1 {
+  transition: background-color 1s ease;
+  -o-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  background-color: #222222ae;
+}
+.color1:hover {background-color: #22222280;}
+.color2 {
+  transition: background-color 1s ease;
+  -o-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  background-color: #3367C2a0;
+}
+.color2:hover { background-color: #3367C2;}
+.color3 {
+  transition: background-color 1s ease;
+  -o-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  background-color: #98699Dae;
+}
+.color3:hover { background-color: #98699D;}
+.color4 {
+  transition: background-color 1s ease;
+  -o-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  background-color: #E24B56ae;
+}
+.color4:hover { background-color: #E24B56;}
+.color5 {
+  transition: background-color 1s ease;
+  -o-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  background-color: #E27454ae;
+}
+.color5:hover { background-color: #E27454;}
+.color6 {
+  transition: background-color 1s ease;
+  -o-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  background-color: #ECB868ae;
+}
+.color6:hover { background-color: #ECB868;}
+.color7 {
+  transition: background-color 1s ease;
+  -o-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  background-color: #D9D7DDae;
+}
+.color7:hover { background-color: #D9D7DD;}
+.color8 {
+  transition: background-color 1s ease;
+  -o-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  background-color: #B07BACae;}
+.color8:hover { background-color: #B07BAC;}
+.color9 {
+  transition: background-color 1s ease;
+  -o-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  background-color: #5F7367ae;
+}
+.color9:hover { background-color: #5F7367;}
+.color10 {
+  transition: background-color 1s ease;
+  -o-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  background-color: #3A3042ae;
+}
+.color10:hover { background-color: #3A3042;}
+.color11 {
+  transition: background-color 1s ease;
+  -o-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  background-color: #EF6461ae;}
+.color11:hover { background-color: #EF6461;}
+
+body {
+  background: url("http://www.bhmpics.com/wallpapers/abstract_background_colorful-1366x768.jpg") no-repeat center center;
+  background-size: cover;
+}
+div {
+  border: .5px solid #00000005;
+  text-align: center;
+}
+h1 {
+  color: #ffffffae;
+  margin: .35em 0 .35em 0;
+  font-size: 2vh;
+}
+h6 {
+  padding: .25em .25em 0 0;
+  color: #ffffffae;
+  font-size: 1vh;
+  text-align: right;
+
+}
+h5 {
+  padding: 0 0 .25em .25em;
+  color: #ffffffae;
+  text-align: left;
+  font-size: 1vh;
+}
+h4 {
+  color: #ffffffae;
+  text-align: center;
+  font-size: 5.5vh;
+}
