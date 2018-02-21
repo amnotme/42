@@ -45,14 +45,17 @@ table {
   border-spacing: 0;
 }
  /* reset stylesheet end */
-body { margin: 18px 0 0 8px;}
+body {
+  margin: 18px 0 0 8px;
+  background-color: #505050;
+}
 
 
 .grid {
     display: grid;
     grid-template-columns: 1fr 180px 1050px 180px 1fr;
-    grid-template-rows: 1fr 4fr 9fr;
-    background-color: #505050;
+    grid-template-rows: 1fr 4fr;
+
 }
 
 header {
@@ -121,6 +124,7 @@ header .refresh { top: 10px;}
     float: left;
     margin: 20px 0 0 30px;
     padding: 15px 0 0 35px;
+    grid-column: 4/5;
 }
 
 .menu2 .wall {
