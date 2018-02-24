@@ -1,0 +1,4 @@
+Be sure that you have MAMP installed in your system.
+Each folder will have to be copied into the /Applications/MAMP/htdocs/ folder
+	each time that you do any changes to it. 
+Refresh and execute once more. 
