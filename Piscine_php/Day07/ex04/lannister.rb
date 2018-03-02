@@ -1,0 +1,1 @@
+class Lannister; end
