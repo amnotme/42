@@ -1,0 +1,27 @@
+
+<- Cell ------------------------------------------------------------------------
+The Cell interface is a template for any object that should occupy a cell.
+
+-[ METHODS ]--------------------------------------------------------------------
+
+void    setX(int $x);
+Saves the x coordinate defining this cell's placement on the game board.
+
+void    setY(int $y);
+Saves the y coordinate defining this cell's placement on the game board.
+
+String  onClickJS(array &$grid);
+Generates a JS payload to be run when clicking on this cell.
+
+void    onPost(array &$grid);
+Handles posts sent to this cell via ('cell_id' => cell_id) in Cell::onClickJS().
+
+String  getTitle();
+Returns a title for this cell.
+
+String  getIconURL();
+Returns a URL or path to an image to be displayed as an icon for this cell.
+
+String  getRotation();
+Returns the rotation of the icon within the cell.
+------------------------------------------------------------------------ Cell ->

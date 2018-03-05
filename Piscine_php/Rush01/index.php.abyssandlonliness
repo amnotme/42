@@ -1,0 +1,129 @@
+<script>
+<?php
+	require_once("Game.class.php");
+	ini_set("display_errors", 1);
+
+	$game = null;
+	$state = null;
+	session_start();
+	if (array_key_exists("game", $_SESSION) && ($game = $_SESSION["game"]) instanceof Game) {
+		$game = $_SESSION["game"];
+		$game->resume();
+		$state = $game->getState();
+		$_SESSION["game"] = $game;
+	}
+	if (($state == null || !$state["active"]) && array_key_exists("p1", $_POST) && array_key_exists("p2", $_POST)) {
+		$p1 = new User($_POST["p1"], "safdg");
+		$p2 = new User($_POST["p2"], "ASdg");
+
+		if ($p1->getLogin() != "" && $p2->getLogin() != "" && $p1 != $p2) {
+			$game = new Game(array($p1, $p2), 150, 100);
+			$game->populate(true);
+			$state = $game->getState();
+			$_SESSION["game"] = $game;
+		}
+		else
+			print("alert(\"Player names must not match or be empty!\");\n");
+	}
+
+	if ($game instanceof Game)
+		print($game->generateJSPayload());
+?>
+</script>
+<link rel="stylesheet" type="text/css" href="rush01.css" />
+<style>
+	td.cell {
+		height: 45px;
+		min-width: 42px;
+		width: 42px;
+		border: 1px groove gainsboro;
+	}
+	img {
+		height: 40px;
+		width: 40px;
+	}
+	img.rotate90 {
+		transform: rotate(90deg);
+	}
+	img.rotate180 {
+		transform: rotate(180deg);
+	}
+	img.rotate270 {
+		transform: rotate(270deg);
+	}
+	body {
+		font-family: Consolas, monaco, monospace;
+		margin: 0 0 151px;
+	}
+	div.footer {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		height: 150px;
+		width: 100%;
+		background-color: black;
+		color: white;
+	}
+	td.split {
+		font-size: 12px;
+		width: 48vw;
+		vertical-align: top;
+		color: white;
+	}
+	.p1_frag
+	{
+		background:#ff0000;
+		opacity:0.6;
+	}
+	.p2_frag
+	{
+		background:#00ff00;
+		opacity:0.6;
+	}
+	.p3_frag
+	{
+		background:#0000ff;
+		opacity:0.6;
+	}
+	.p4_frag
+	{
+		background:#ffff00;
+		opacity:0.6;
+	}
+	.highlight {
+    	background-color:lightgray;
+	}
+</style>
+<body background="http://s3.amazonaws.com/everystockphoto/fspid30/31/20/07/2/tileable-classic-nebula-3120072-o.jpg">
+<?php
+	if ($game instanceof Game)
+		print($game->generateBoard());
+?>
+<div class="footer">
+<?php
+	if ($state != null && $state["active"]) {
+		print("<table><tr><td class=\"split\">");
+		print($game->generateLeft());
+		print("</td><td class=\"split\">");
+		print($game->generateRight());
+		print("</td></tr></table>");
+	}
+	else {
+		print("<table><tr><td class=\"split\">");
+		print(
+			"<form method=\"post\">".
+			"<input type=\"text\" name=\"p1\" placeholder=\"Player 1\" style=\"margin: 4px;\" autocomplete=\"off\" autofocus/>".
+			"<br/>".
+			"<input type=\"text\" name=\"p2\" placeholder=\"Player 2\" style=\"margin: 4px;\" autocomplete=\"off\"/>".
+			"<br/>".
+			"<input type=\"submit\" name=\"start\" value=\"START!\" style=\"margin: 4px;\"/>".
+			"</form>"
+		);
+		print("</td><td class=\"split\">");
+		if ($state != null)
+			print($state["result"]);
+		print("</td></tr></table>");
+	}
+?>
+</div>
+</body>

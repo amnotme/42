@@ -1,0 +1,33 @@
+
+<- Obstacle --------------------------------------------------------------------
+Non-sentient object that only exists to provide collisions.
+
+-[ CONSTRUCTOR ]----------------------------------------------------------------
+
+new Obstacle(int $icon, int $rotation);
+$icon => Any number.
+$rotation => Any number.
+
+-[ METHODS ]--------------------------------------------------------------------
+
+void    setX(int $x);
+Override for Cell::setX(int $x);
+
+void    setY(int $y);
+Override for Cell::setY(int $y);
+
+String  onClickJS(array &$grid);
+Override for Cell::onClickJS(array &$grid);
+
+void    onPost(array &$grid);
+Override for Cell::onPost(array &$grid);
+
+String  getTitle();
+Override for Cell::getTitle();
+
+String  getIconURL();
+Override for Cell::getIconURL();
+
+String  getRotation();
+Override for Cell::getRotation();
+-------------------------------------------------------------------- Obstacle ->

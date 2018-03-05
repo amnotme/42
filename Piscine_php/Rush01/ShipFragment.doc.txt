@@ -1,0 +1,43 @@
+
+<- ShipFragment ----------------------------------------------------------------
+A ShipFragment refers to single cell in an entire Ship object. It's essentially
+a wrapper for a Ship that leaks a fraction of itself to the game board.
+
+-[ CONSTRUCTOR ]----------------------------------------------------------------
+
+new ShipFragment(Ship $ship, String $icon);
+$ship => The ship this fragment belongs to.
+$icon => The image to display.
+
+-[ METHODS ]--------------------------------------------------------------------
+
+void    setX(int $x);
+Override for Cell::setX(int $x);
+
+void    setY(int $y);
+Override for Cell::setY(int $y);
+
+Ship    getShip();
+Returns the overall Ship object.
+
+String  onClickJS(array &$grid);
+Override for Cell::onClickJS(array &$grid);
+
+void    onPost(array &$grid);
+Override for Cell::onPost(array &$grid);
+
+String  getTitle();
+Override for Cell::getTitle();
+
+String  getIconURL();
+Override for Cell::getIconURL();
+
+String  getRotation();
+Override for Cell::getRotation();
+
+void    rotateLeft();
+Rotates the image by 90deg to the left.
+
+void    rotateRight();
+Rotates the image by 90deg to the right.
+---------------------------------------------------------------- ShipFragment ->

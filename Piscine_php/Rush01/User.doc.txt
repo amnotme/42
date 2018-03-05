@@ -1,0 +1,25 @@
+<- User ------------------------------------------------------------------------
+The User class contains a series of functions designed to help manage user login
+and logout and stores user stats and analytics.
+
+-[ CONSTRUCTOR ]----------------------------------------------------------------
+
+new User(String $login, String $passwd);
+$login => user login name
+$passwd => user password to be hashed
+
+-[ METHODS ]--------------------------------------------------------------------
+
+String	getLogin();
+Returns the login name of the User.
+
+void	updatePass(String $passwd);
+Changes the current password to the new password given, rehashing it along the
+way.
+
+bool	auth(String $passwd);
+Compares the password given to the hashed password stored.
+
+String	__toString();
+Returns the login name of the User.
+------------------------------------------------------------------------ User ->

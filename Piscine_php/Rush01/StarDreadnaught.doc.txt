@@ -1,0 +1,35 @@
+<- StarDreadnaught--------------------------------------------------------------
+A test ship consisting of a "insert picture"
+
+-[ CONSTRUCTOR ]----------------------------------------------------------------
+
+new StarDreadnaught(Game $game, int $player);
+$game => The overall Game object.
+$player => The owning player's id.
+
+-[ METHODS ]--------------------------------------------------------------------
+
+String  getName();
+Override for Ship::getName();
+
+int     getPP();
+Override for Ship::getPP();
+
+int     getHP();
+Override for Ship::getHP();
+
+int     getBaseSpeed();
+Override for Ship::getBaseSpeed();
+
+int     getHandling();
+Override for Ship::getHandling();
+
+int     getBaseDefense();
+Override for Ship::getBaseDefense();
+
+int     getBaseAttack();
+Override for Ship::getBaseAttack();
+
+void    shoot();
+Override for Ship::shoot();
+------------------------------------------------------------- StarDreadnaught ->

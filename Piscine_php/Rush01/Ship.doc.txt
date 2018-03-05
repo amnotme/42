@@ -1,0 +1,123 @@
+
+<- Ship ------------------------------------------------------------------------
+The ship class is the core of the entire game. All actions done are reflected on
+by ships. The class offers extensive operations to ease the creation of new
+ships. There are only a handful of functions one must override to create a new
+class that will serve as an entirely new ship.
+
+-[ CONSTRUCTOR ]----------------------------------------------------------------
+
+new Ship(Game $game, int $player, int $width, int $height, array $icons);
+$game => The overall Game object.
+$player => The owning player's id.
+$width => The ship width.
+$height => The ship height.
+$icons => A 2D array of icons to supply to the ship fragments for each cell.
+
+-[ METHODS ]--------------------------------------------------------------------
+
+String  getName();
+Returns this ship's name.
+
+int     getHP();
+Returns the maximum amount of HP this ship may have at one time.
+
+int     getPP();
+Returns the maximum amount of PP this ship may have at one time.
+
+int     getBaseSpeed();
+Returns the base speed for this ship.
+
+int     getHandling();
+Returns the handling value for the ship.
+
+int     getBaseDefense();
+Returns the base defense for this ship.
+
+int     getBaseAttack();
+Returns the base attack for this ship.
+
+void    shoot();
+Fires a shot.
+
+void    dealDamage(int $damage);
+Deals damage to this ship.
+
+int     getWidth();
+Returns this ship's width.
+
+int     getHeight();
+Returns this ship's height.
+
+int     getRemainingHP();
+Returns the remaining amount of HP on this ship.
+
+int     getRemainingPP();
+Returns the remaining amount of PP on this ship.
+
+bool    increaseSpeed();
+Increases speed by a dice roll, at the expense of 1 PP.
+
+int     getSpeedModifier();
+Returns this ship's additional speed.
+
+int     getSpeed();
+Returns this ship's total speed.
+
+int     getHandlingFactor();
+Returns this ship's handling factor.
+
+bool    increaseDefense();
+Increases defense by 1, at the expense of 1 PP.
+
+int     getDefenseModifier();
+Returns this ship's additional defense.
+
+int     getDefense();
+Returns this ship's total defense.
+
+bool    increaseAttack();
+Increases attack by a dice roll, at the expense of 1 PP.
+
+int     getAttackModifier();
+Returns this ship's additional attack.
+
+int     getAttack();
+Returns this ship's total attack.
+
+String  getCellID();
+Returns the ID used to message this ship via POST.
+
+String  onClickJS(array &$grid);
+Generates a JS payload to POST to this ship.
+
+void    onPost(array &$grid);
+Handles incoming POST requests.
+
+bool    canActivate();
+Determines if this ship is fit to be activated.
+
+bool    place(array &$grid, int $x, int $y);
+Places this ship on the game board.
+
+bool    includesFragment(Cell $fragment);
+Checks if a ShipFragment belongs to this ship.
+
+void    destroy();
+Destroys this ship for good.
+
+bool    isStationary();
+Checks if the ship's conditions meet the stationary requirements.
+
+bool    canRotate();
+Checks if the ship can currently rotate.
+
+void    move(int $distance);
+Moves the ship forward by a distance limited by speed.
+
+void    rotateLeft();
+Rotates the ship by 90deg to the left.
+
+void    rotateRight();
+Rotates the ship by 90deg to the right.
+------------------------------------------------------------------------ Ship ->

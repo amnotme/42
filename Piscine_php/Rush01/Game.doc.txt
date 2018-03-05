@@ -1,0 +1,69 @@
+
+<- Game ------------------------------------------------------------------------
+The Game class handles dispatching information from POST to cells and ships on
+the game board. It is also responsible for player management and generating the
+main page for the game board.
+
+-[ CONSTRUCTOR ]----------------------------------------------------------------
+
+new Game(String $p1, String $p2, int $width, int $height);
+$p1 => Player 1's name.
+$p2 => Player 2's name.
+$width => Board width.
+$height => Board height.
+
+-[ METHODS ]--------------------------------------------------------------------
+
+array   getState();
+Returns a hashmap of the game state. Should be used to derive the active player
+and overall activity of the board.
+
+array   getPlayers();
+Returns an array of all the players' names (2).
+
+int     getWidth();
+Returns the width of the board.
+
+int     getHeight();
+Returns the height of the board.
+
+array   getGrid();
+Returns the game board.
+
+int     rollDice(int $numDice);
+Returns an integer result. As if $numDice dice were rolled.
+
+void    activate(Ship $ship);
+Activates a ship for the current phase.
+
+void    deactivate();
+Deactivates the ship in the current phase.
+
+void    place(int $x, int $y, Cell $object);
+Places a cell on the game board.
+
+void    remove(int $x, int $y);
+Removes a cell from the game board.
+
+void    get(int $x, int $y);
+Peeks at a cell in the game board.
+
+String  getPhaseName();
+Returns the name of the current game phase.
+
+String  generateJSPayload();
+Generates a JS payload derived from every cell of the game board.
+
+String  generateBoard();
+Generates an HTML table portraying every cell of the game board.
+
+String  generateLeft();
+Generates information to be displayed on the left of the screen.
+
+String  generateRight();
+Generates information to be displayed on the right of the screen.
+
+void    resume();
+Resumes the game from the last state, and attempts to build the next state via
+POST.
+------------------------------------------------------------------------ Game ->
