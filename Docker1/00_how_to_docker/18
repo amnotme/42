@@ -1,0 +1,2 @@
+# reference -> https://docs.docker.com/engine/reference/commandline/container_restart/#related-commands
+docker container restart overlord

@@ -1,0 +1,6 @@
+# to test you must create a different container to see if it's running
+# docker run --detach --name test-wordpress --link spawning-pool:mysql wordpress
+# To verify if it’s linked correctly, enter the test-wordpress container and look at the content of /etc/hosts:
+# docker exec -it test-wordpress bash
+# root@0cb9f4152022:/var/www/html# cat /etc/hosts
+docker run --detach --name=spawning-pool --volume=hatchery:/mysql --env="MYSQL_ROOT_PASSWORD=Kerrigan" --env="MYSQL_DATABASE=zerlings" --restart=on-failure  mysql

@@ -1,0 +1,7 @@
+# 1. First enter your virtual machine ssh
+#    docker-machine ssh <container-name>
+
+# 2. create the docker swarm / you can use --advertise-addr if you are
+#    going to be managing more than one node otherwise you don't have to
+
+docker swarm init --advertise-addr 192.168.99.100

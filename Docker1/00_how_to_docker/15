@@ -1,0 +1,2 @@
+# the command --link here ensure that the :db 'database' is linked from the spawning-pool container
+docker run --detach --name=roach-warden --publish=8081:80 --link spawning-pool:db phpmyadmin/phpmyadmin

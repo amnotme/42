@@ -1,0 +1,2 @@
+# the --link command ensures that that worpress uses mysql from spawning tool
+docker run --detach --name=lair --publish=8080:80 --link spawning-pool:mysql wordpress

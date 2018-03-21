@@ -1,1 +1,5 @@
-docker run -it alpine /bin/sh
+# the package manager is apk with commands such as update, upgrade and add
+# you can add a metapackate with the most essential of tools with
+# apk add --update alpine-sdk
+# reference -> https://github.com/gliderlabs/docker-alpine/issues/24
+docker run --rm  --interactive --tty alpine /bin/sh

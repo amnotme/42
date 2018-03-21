@@ -1,0 +1,8 @@
+# 1. You can get the command to joing the swarm manager as worker by 
+#    entering the swarm leader node with ssh and running ->
+#    docker swarm join-token worker
+
+# 2. When you have obtaine the token you can you can go enter the docker
+#    machine you'd like as a worker and run docker join with the --token
+
+docker swarm join --token SWMTKN-1-0j4imuqecaaoxlgxm01hzv4lnpu91c39mo67ntdol0i8gd3bqq-da795fcdl3vy2563z5v3ydm5y 192.168.99.100:2377

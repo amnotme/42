@@ -1,1 +1,8 @@
-docker container inspect overlord --format='{{.NetworkSettings.IPAddress}}'
+# many ways of getting to the container ip address from a docker machine:
+# old way => this will continue to work well
+# docker container inspect --format "{{.NetworkSettings.IPAddress}}" overlord
+# new way => this will be the standard as this will allow to be more specific
+#			 what the user may need
+#			 for more reference you can look at this stack overflow post 
+# https://stackoverflow.com/questions/17157721/how-to-get-a-docker-containers-ip-address-from-the-host
+docker container inspect --format "{{ range .NetworkSettings.Networks}}{{ .IPAddress }}{{end}}" overlord
