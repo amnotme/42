@@ -1,2 +1,25 @@
-# the command --link here ensure that the :db 'database' is linked from the spawning-pool container
-docker run --detach --name=roach-warden --publish=8081:80 --link spawning-pool:db phpmyadmin/phpmyadmin
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    15                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/03/21 22:52:45 by lhernand          #+#    #+#              #
+#    Updated: 2018/03/21 22:53:53 by lhernand         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# Launch a phpmyadmin container as a background task. It should be named 
+# roach-warden, its 80 port should be bound to the 8081 port of the virtual 
+# machine and it should be able to explore the database stored in the 
+# spawning-pool container.
+#
+# the command --link here ensure that the :db 'database' is linked from the 
+# spawning-pool container
+#
+
+docker run --detach \
+			--name=roach-warden \
+			--publish=8081:80 \
+			--link spawning-pool:db phpmyadmin/phpmyadmin

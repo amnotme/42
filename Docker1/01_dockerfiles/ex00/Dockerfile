@@ -1,19 +1,20 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    10                                                 :+:      :+:    :+:    #
+#    Dockerfile                                         :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2018/03/21 22:42:58 by lhernand          #+#    #+#              #
-#    Updated: 2018/03/21 22:43:30 by lhernand         ###   ########.fr        #
+#    Created: 2018/03/24 16:14:27 by lhernand          #+#    #+#              #
+#    Updated: 2018/03/24 17:33:55 by lhernand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #
-# Create a volume named hatchery
-#
-# reference -> https://docs.docker.com/engine/reference/commandline/volume_create/
+# From an alpine image you’ll add to your container your favorite text editor, 
+# vim or emacs, that will launch along with your container.
 #
 
-docker volume create hatchery
+FROM debian:stable
+RUN apt-get update && apt-get install -y vim
+

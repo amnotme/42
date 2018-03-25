@@ -1,1 +1,17 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    01                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/03/21 20:52:00 by lhernand          #+#    #+#              #
+#    Updated: 2018/03/21 20:52:35 by lhernand         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#
+# 1. Create a virtual machine with docker-machine using the virtualbox driver, 
+#    and named Char.
+
 docker-machine create --driver=virtualbox "Char"

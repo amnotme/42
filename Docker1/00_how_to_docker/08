@@ -1,5 +1,24 @@
-# the package manager is apk with commands such as update, upgrade and add
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    08                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/03/21 21:01:18 by lhernand          #+#    #+#              #
+#    Updated: 2018/03/21 21:03:45 by lhernand         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#
+# Launch a shell from an alpine container, and make sure that you can interact
+# directly with the container via your terminal, and that the container 
+# deletes itself once the shell’s execution is done.
+#
+# The package manager is apk with commands such as update, upgrade and add
 # you can add a metapackate with the most essential of tools with
 # apk add --update alpine-sdk
 # reference -> https://github.com/gliderlabs/docker-alpine/issues/24
+#
+
 docker run --rm  --interactive --tty alpine /bin/sh

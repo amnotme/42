@@ -1,0 +1,24 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    26                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/03/22 14:54:05 by lhernand          #+#    #+#              #
+#    Updated: 2018/03/22 22:47:50 by lhernand         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#
+# Launch a 42school/engineering-bay service in two replicas and make sure that
+# the service works properly (see the documentation provided at hub.docker.com).
+# This service will be named engineering-bay and will be on the overmind network
+#
+
+docker pull 42school/engineering-bay 
+docker service create --network=overmind \
+						--name=engineering-bay \
+						--env OC_USERNAME=leo \
+						--env OC_PASSWD=1234 \
+						--replicas=2  42school/engineering-bay:latest

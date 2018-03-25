@@ -1,19 +1,50 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    19                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/03/21 22:57:16 by lhernand          #+#    #+#              #
+#    Updated: 2018/03/22 00:21:09 by lhernand         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#
+# Launch a container name Abathur. It will be a Python container, 2-slim version,
+# its /root folder will be bound to a HOME folder on your host, and its 3000 port
+# will be bound to the 3000 port of your virtual machine.
+# You will personalize this container so that you can use the Flask 
+# micro-framework in its latest version. You will make sure that an html page 
+# displaying "Hello World" with <h1> tags can be served by Flask. 
+# You will test that your container is properly set up by accessing, 
+# via curl or a web browser, the IP address of your virtual machine on the 
+# 3000 port. You will also list all the necessary commands in your repository.
+#
 # 1. create a root directory with your $HOME path
+#
 
 mkdir $HOME/root
 
+#
 # 2. Create a container that's detached and which has TeleTYpewriter
-# 	 functionality with name Abathur and which publishes to bind/expose ports 3000
+#    functionality with name Abathur and which publishes to bind/expose ports 3000
 #    from the host and the container.  Mount the folder $HOME/root to /root
 #    use the python:2-slim version and run it with bash command
+#
 
-docker run --detach --tty --name=Abathur --publish=3000:3000  --volume=$HOME/root:/root  python:2-slim bash
+docker run --detach \
+			--tty \
+			--name=Abathur \
+			--publish=3000:3000  \
+			--volume=$HOME/root:/root  python:2-slim bash
 
+#
 # 3. you can run the flask server container with docker exec -it Abathur bash
-
+#
 # 4. These are the commands that you need in order to run your app and to be
 #    seen in your web browser.
-
+#
 
 # apt-get update && apt-get install pip -y
 # pip install flask

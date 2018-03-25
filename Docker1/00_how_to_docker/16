@@ -1,1 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    16                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/03/21 22:54:14 by lhernand          #+#    #+#              #
+#    Updated: 2018/03/21 22:55:14 by lhernand         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#
+# Look up the spawning-pool container’s logs in real time without running its
+# shell.
+#
+
 docker container logs spawning-pool

@@ -1,1 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    05                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/03/21 20:55:33 by lhernand          #+#    #+#              #
+#    Updated: 2018/03/21 20:56:09 by lhernand         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#
+# Launch the hello-world container, and make sure that it prints its welcome 
+# message, then leaves it.
+#
+
 docker run hello-world

@@ -1,19 +1,18 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    10                                                 :+:      :+:    :+:    #
+#    32                                                 :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2018/03/21 22:42:58 by lhernand          #+#    #+#              #
-#    Updated: 2018/03/21 22:43:30 by lhernand         ###   ########.fr        #
+#    Created: 2018/03/22 23:11:33 by lhernand          #+#    #+#              #
+#    Updated: 2018/03/22 23:20:47 by lhernand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-#
-# Create a volume named hatchery
-#
-# reference -> https://docs.docker.com/engine/reference/commandline/volume_create/
+# 
+# Force quit and delete all the containers (whatever their status), 
+# in one command.
 #
 
-docker volume create hatchery
+docker container rm --force $(docker container ps --all --quiet)

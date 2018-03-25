@@ -1,0 +1,35 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    27                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/03/22 22:21:01 by lhernand          #+#    #+#              #
+#    Updated: 2018/03/22 22:47:59 by lhernand         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#
+# Get the real-time logs of one the tasks of the engineering-bay service
+#
+# You will also want to first get the ID number for the tasks that are running
+# You can obtain them by running -> 
+#	docker service ps --format {{.ID}} engineering-bay
+#
+#	nio6onrjmp95
+#	tcpf9zn0j112
+#	zono8lcbp754
+#	vrslecwfdym7
+#	cm2u5yzznz9k
+#	usgb6c861a6j
+#	w01hnnrzfa65
+#	p0p4hano6yzc
+#	v8ux3e3g0hko
+#	w98vntlbeaq2 
+#
+# From Here you can choose the ID of a task you need and use the --follow for
+# real time logs.
+#
+
+docker service logs --follow nio6onrjmp95

@@ -1,19 +1,17 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    10                                                 :+:      :+:    :+:    #
+#    25                                                 :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2018/03/21 22:42:58 by lhernand          #+#    #+#              #
-#    Updated: 2018/03/21 22:43:30 by lhernand         ###   ########.fr        #
+#    Created: 2018/03/21 23:07:59 by lhernand          #+#    #+#              #
+#    Updated: 2018/03/21 23:08:15 by lhernand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #
-# Create a volume named hatchery
-#
-# reference -> https://docs.docker.com/engine/reference/commandline/volume_create/
+# List all the services of the local swarm.
 #
 
-docker volume create hatchery
+docker service ls

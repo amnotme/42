@@ -1,1 +1,23 @@
-docker run --detach --publish=5000:80 --name="overlord" --restart="always" nginx
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    06                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/03/21 20:56:26 by lhernand          #+#    #+#              #
+#    Updated: 2018/03/21 23:10:00 by lhernand         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#
+# Launch an nginx container, available on Docker Hub, as a background task. It
+# should be named overlord, be able to restart on its own, and have its 80 port
+# attached to the 5000 port of Char. You can check that your container functions
+# properly by visiting http://<ip-de-char>:5000 on your web browser
+#
+
+docker run --detach \
+			--publish=5000:80 \
+			--name="overlord" \
+			--restart="always" nginx

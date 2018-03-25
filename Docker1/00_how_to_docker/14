@@ -1,2 +1,26 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    14                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/03/21 22:47:59 by lhernand          #+#    #+#              #
+#    Updated: 2018/03/21 22:52:11 by lhernand         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# Launch a wordpress container as a background task, just for fun. The container
+# should be named lair, its 80 port should be bound to the 8080 port of the 
+# virtual machine, and it should be able to use the spawning-pool container as
+# a database service. You can try to access lair on your machine via a web 
+# browser, with the IP address of the virtual machine as a URL.
+# Congratulations, you just deployed a functional Wordpress website in 
+# two commands!
+#
 # the --link command ensures that that worpress uses mysql from spawning tool
-docker run --detach --name=lair --publish=8080:80 --link spawning-pool:mysql wordpress
+#
+docker run --detach \
+			--name=lair \
+			--publish=8080:80 \
+			--link spawning-pool:mysql wordpress

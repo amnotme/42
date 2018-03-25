@@ -1,0 +1,35 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    28                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/03/22 22:41:47 by lhernand          #+#    #+#              #
+#    Updated: 2018/03/22 22:48:58 by lhernand         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#
+# ... Damn it, a group of zergs is attacking orbital-command, and shutting down
+# the engineering-bay service won’t help at all... You must send a troup of 
+# Marines to eliminate the intruders. Launch a 42school/marine-squad in two 
+# replicas, and make sure that the service works properly (see the documentation
+# provided at hub.docker.com). This service will be named... marines and will 
+# be on the overmind network.
+#
+# We ensure that we attach the overmind network, right name, set the correct
+# number of replicas (2, one for node Aiur and one for node Char). We have
+# to use the orbital-command passwords we used when we set the rabbitmq
+# service.
+#
+# Make sure that the service is working by running ->
+# 	docker service ps marines or
+# 	docker service logs --follow marines
+#
+
+docker service create --network=overmind \
+					--name=marines \
+					--replicas=2 \
+					--env OC_USERNAME=leo \
+					--env OC_PASSWD=1234 42school/marine-squad:latest

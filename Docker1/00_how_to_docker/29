@@ -1,19 +1,17 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    10                                                 :+:      :+:    :+:    #
+#    29                                                 :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2018/03/21 22:42:58 by lhernand          #+#    #+#              #
-#    Updated: 2018/03/21 22:43:30 by lhernand         ###   ########.fr        #
+#    Created: 2018/03/22 22:49:13 by lhernand          #+#    #+#              #
+#    Updated: 2018/03/22 22:49:26 by lhernand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #
-# Create a volume named hatchery
-#
-# reference -> https://docs.docker.com/engine/reference/commandline/volume_create/
+# Display all the tasks of the marines service.
 #
 
-docker volume create hatchery
+docker service ps marines

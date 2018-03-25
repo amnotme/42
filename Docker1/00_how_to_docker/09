@@ -1,8 +1,27 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    09                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/03/21 21:04:53 by lhernand          #+#    #+#              #
+#    Updated: 2018/03/22 15:03:40 by lhernand         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#
+# From the shell of a debian container, install via the container’s package 
+# manager everything you need to compile C source code and push it onto a git 
+# repo (of course, make sure before that the package manager and the packages 
+# already in the container are updated). For this exercise, you should only 
+# specify the commands to be run directly in the container.
+#
+
 apt-get update &&
 apt-get upgrade &&
 apt install git -y &&
 apt install vim -y &&
 apt install gcc -y &&
 apt install libc-dev -y 
-
 

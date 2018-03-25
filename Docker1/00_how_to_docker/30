@@ -1,19 +1,19 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    10                                                 :+:      :+:    :+:    #
+#    30                                                 :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2018/03/21 22:42:58 by lhernand          #+#    #+#              #
-#    Updated: 2018/03/21 22:43:30 by lhernand         ###   ########.fr        #
+#    Created: 2018/03/22 22:52:44 by lhernand          #+#    #+#              #
+#    Updated: 2018/03/22 22:53:26 by lhernand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #
-# Create a volume named hatchery
-#
-# reference -> https://docs.docker.com/engine/reference/commandline/volume_create/
+# Increase the number of copies of the marines service up to twenty, 
+# because there’s never enough Marines to eliminate Zergs. (Remember to take 
+# a look at the tasks and logs of the service, you’ll see, it’s fun.)
 #
 
-docker volume create hatchery
+docker service update --replicas=20 marines

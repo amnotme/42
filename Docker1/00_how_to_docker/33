@@ -1,19 +1,18 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    10                                                 :+:      :+:    :+:    #
+#    33                                                 :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2018/03/21 22:42:58 by lhernand          #+#    #+#              #
-#    Updated: 2018/03/21 22:43:30 by lhernand         ###   ########.fr        #
+#    Created: 2018/03/22 23:30:53 by lhernand          #+#    #+#              #
+#    Updated: 2018/03/22 23:31:25 by lhernand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #
-# Create a volume named hatchery
-#
-# reference -> https://docs.docker.com/engine/reference/commandline/volume_create/
+# Delete all the container images stored on the Char virtual machine, 
+# in one command as well.
 #
 
-docker volume create hatchery
+docker image rm --force $(docker image ls --quiet)
