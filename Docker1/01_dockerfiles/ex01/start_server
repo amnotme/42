@@ -1,0 +1,19 @@
+#!/bin/sh
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    start_server                                       :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/03/25 20:59:16 by lhernand          #+#    #+#              #
+#    Updated: 2018/03/25 20:59:43 by lhernand         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# Run the teamspeak server
+
+
+export LD_LIBRARY_PATH=/opt/teamspeak
+cd /opt/teamspeak
+./ts3server logpath=/data/logs
