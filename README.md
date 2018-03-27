@@ -1,9 +1,3 @@
-#
-Frozen  
-
-frozen is an implementation of an IRC using golang to create a client chat. 
-
-------------------------------------------------------------------
 
 # Libft
 
