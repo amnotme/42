@@ -6,30 +6,51 @@
 /*   By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/29 22:00:48 by lhernand          #+#    #+#             */
-/*   Updated: 2018/03/30 11:27:17 by lhernand         ###   ########.fr       */
+/*   Updated: 2018/04/03 01:13:41 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_printf/ft_struct.h"
+#include "ft_struct.h"
+#include "ft_printf_header.h"
 
-int			echo(int argc, char **argv)
+static void	initialize(int *i, int *flag, int *c)
+{
+	*flag = 1;
+	*i = 1;
+	*c = 0;
+}
+
+int			builtin_echo(char **params)
 {
 	int i;
+	int flag;
+	int c;
 
-	i = 1;
-	if (argc == 1)
-		ft_putchar('\n');
-	else if (argc != 1)
+	initialize(&i, &flag, &c);
+	while (params[c])
+		c++;
+	if (c == 1)
+		return (0);
+	if (ft_strcmp(ft_strtrim(params[i]), "-n") == 0)
 	{
-		while(i < argc)
-		{
-			if (i < argc -1)
-				ft_printf("%s ", argv[i])
-			else
-				ft_printf("%s", argv[i]);
-			i++;
-		}
-		ft_putchar('\n');
+		flag = 0;
+		i++;
 	}
-	return (0);	
+	while (params[i])
+	{
+		if (i == (c - 1))
+			ft_printf("%s", params[i++]);
+		else
+			ft_printf("%s ", params[i++]);
+	}
+	if (flag != 0)
+		ft_putchar('\n');
+	return (0);
+}
+
+int			main(int argc, char **argv)
+{
+	(void)argc;
+	builtin_echo(argv);
+	return (0);
 }
