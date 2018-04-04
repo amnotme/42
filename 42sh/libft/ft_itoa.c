@@ -3,35 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: brabo-hi <brabo-hi@student.42.us.org>      +#+  +:+       +#+        */
+/*   By: brabo-hi <brabo-hi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/07 15:42:19 by brabo-hi          #+#    #+#             */
-/*   Updated: 2017/11/10 15:01:34 by brabo-hi         ###   ########.fr       */
+/*   Updated: 2018/01/11 03:54:01 by brabo-hi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static char	*ft_strrev(char *str)
-{
-	char	*p1;
-	char	*p2;
-	char	temp;
-
-	if (!str || !*str)
-		return (str);
-	p1 = str;
-	p2 = str + ft_strlen(str) - 1;
-	while (p2 > p1)
-	{
-		temp = *p2;
-		*p2 = *p1;
-		*p1 = temp;
-		++p1;
-		--p2;
-	}
-	return (str);
-}
 
 static int	words(int n)
 {

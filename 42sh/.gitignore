@@ -2,7 +2,7 @@
 ._*
 .DS_Store*
 ._.DS_Store*
-*swp
+*.swp
 
 # Prerequisites
 *.d
@@ -57,5 +57,10 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
+# Clion
 cmake-build-debug
 CMakeLists.txt
+.idea
+
+# Visual Code
+.vscode

@@ -1,0 +1,17 @@
+--minishell--
+DONE	add code for getting/setting environment variable key/values
+DONE	add code for looking for binaries in all $PATH folder
+PARTIAL	implement all builtin functions
+DONE	implement execution of external binaries
+	norme
+
+-42sh--
+	implement lexer/parser
+	implement execution
+	implement builtins
+	implement setting/unsetting variables
+	implement history file read/write
+	implement termcaps, arrow keys, ctrl+a, ctrl+e, ..
+release:
+	edit Makefiles for 42sh, ft_printf, libft, --> change "-g" flags to "-O2"
+

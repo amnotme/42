@@ -3,12 +3,18 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ztisnes <ztisnes@student.42.us.org>        +#+  +:+       +#+         #
+#    By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/03/25 17:50:25 by ztisnes           #+#    #+#              #
-#    Updated: 2018/03/25 17:50:52 by ztisnes          ###   ########.fr        #
+#    Updated: 2018/04/02 20:52:32 by ztisnes          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+#Color coders
+RESET_COLOR="\033[0m"
+OK_COLOR="\033[0;32m"
+WARN_COLOR="\033[0;33m Warning. Check that everything is alright. \033[0m"
+ERR_COLOR="\033[0;31m There was an error during your process. \033[0m"
 
 NAME=exe
 SRC=*.c
@@ -22,7 +28,6 @@ LIBFT_LS=./ft_ls
 LIBFT_NAME=libft
 LIBFTFT_PRINTF_NAME=libftprintf
 LIBFT_LS_NAME=libftls
-
 
 all:$(NAME)
 
@@ -53,3 +58,12 @@ re: fclean all
 	@cd $(LIBFT) && make re
 	@cd $(LIBFTFT_PRINTF) && make re
 	@cd $(LIBFT_LS) && make re
+
+git:
+	@echo "Adding to Github/Vogsphere"
+	@git add .
+	@echo "What is your message of your commit?"
+	@read msg && git commit -m "$$msg"
+	@echo "Pushing..."
+	@git push
+	@echo $(OK_COLOR) "all good :)" $(RESET_COLOR)

@@ -6,7 +6,7 @@
 /*   By: brabo-hi <brabo-hi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/05 21:01:32 by brabo-hi          #+#    #+#             */
-/*   Updated: 2018/01/05 00:21:10 by brabo-hi         ###   ########.fr       */
+/*   Updated: 2018/03/22 19:45:10 by brabo-hi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <errno.h>
+# include <limits.h>
 
 typedef struct		s_list
 {
@@ -28,6 +29,7 @@ typedef struct		s_list
 }					t_list;
 
 int					ft_atoi(const char *str);
+intmax_t			ft_atoi_intmax_t(const char *str);
 void				ft_bzero(void *s, size_t n);
 char				*ft_capitalize(char *s);
 int					ft_countwords(char const *str, char c);
@@ -84,10 +86,12 @@ int					ft_strnequ(char const *s1, char const *s2, size_t n);
 char				*ft_strnew(size_t size);
 char				*ft_strnstr(const char *bg, const char *lt, size_t len);
 char				*ft_strrchr(const char *s, int c);
+char				*ft_strrev(char *str);
 char				**ft_strsplit(char const *str, char c);
 char				*ft_strstr(const char *haystack, const char *needle);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strtrim(char const *s);
+char				*ft_strword(char *str);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
 #endif

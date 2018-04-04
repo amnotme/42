@@ -6,7 +6,7 @@
 #    By: brabo-hi <brabo-hi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/10/27 22:57:13 by brabo-hi          #+#    #+#              #
-#    Updated: 2018/01/04 22:57:46 by brabo-hi         ###   ########.fr        #
+#    Updated: 2018/01/11 03:55:51 by brabo-hi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,10 +68,12 @@ ft_strnequ.c\
 ft_strnew.c\
 ft_strnstr.c\
 ft_strrchr.c\
+ft_strrev.c\
 ft_strsplit.c\
 ft_strstr.c\
 ft_strsub.c\
 ft_strtrim.c\
+ft_strword.c\
 ft_tolower.c\
 ft_toupper.c
 
