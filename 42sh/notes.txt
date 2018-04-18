@@ -1,7 +1,0 @@
-the basics of a shell
-
-	The shell runs in three different steps
-	1. ) Read: read the commnad from standard input
-	2. ) Parse: Separate the command string into a program and arguments.
-	3. ) Execute: Run the parsed command.
-
