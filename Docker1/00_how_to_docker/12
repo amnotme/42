@@ -6,7 +6,7 @@
 #    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/03/21 22:44:52 by lhernand          #+#    #+#              #
-#    Updated: 2018/03/21 22:47:45 by lhernand         ###   ########.fr        #
+#    Updated: 2018/04/21 21:17:23 by lhernand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,4 +28,4 @@
 docker run --detach --name=spawning-pool --volume=hatchery:/mysql \
 	--env="MYSQL_ROOT_PASSWORD=Kerrigan" \
 	--env="MYSQL_DATABASE=zerlings" \
-	--restart=on-failure  mysql
+	--restart=on-failure  mysql:5.7
