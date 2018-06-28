@@ -1,42 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Phone.class.hpp                                    :+:      :+:    :+:   */
+/*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/06/25 19:20:46 by lhernand          #+#    #+#             */
-/*   Updated: 2018/06/25 22:34:17 by lhernand         ###   ########.fr       */
+/*   Created: 2018/06/27 19:55:02 by lhernand          #+#    #+#             */
+/*   Updated: 2018/06/27 20:06:57 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PHONE_CLASS_H
-# define PHONE_CLASS_H
+#ifndef ZOMBIE_H
+# define ZOMBIE_H
 
 #include <string>
 
-struct Contact
-{
-	std::string first_name;
-	std::string last_name;
-	std::string nickname;
-	std::string login;
-	std::string address;
-	std::string email;
-	std::string pnumber;
-	std::string bday;
-	std::string fmeal;
-	std::string underwear_color;
-	std::string dsecret;
-};
-
-
-class Phone {
+class Zombie {
 	public:
-	Contact contact;
-	void add(int *index);
-	void search(int index_to_search, int members_in_phonebook);
-	void exit();
+		Zombie( void );
+		Zombie( std::string name, std::string type);
+		~Zombie( void );
+
+		void announce( void );
+		std::string getName( void );
+		std::string getType( void );
+		void setName( std::string name);
+		void setType( std::string type);
+
+	private:
+		std::string _name;
+		std::string _type;
 };
 
 #endif
