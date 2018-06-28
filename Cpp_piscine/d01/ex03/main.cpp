@@ -17,10 +17,13 @@
 
 int     main( void ) {
 
-  ZombieHorde zoms = ZombieHorde(1000);
-  zoms.announce();
+  ZombieHorde *zoms = new ZombieHorde(5);
+  zoms->announce();
 
-  ZombieHorde zoms2 = ZombieHorde(1);
-  zoms2.announce();
+ ZombieHorde zoms2 = ZombieHorde(1);
+ zoms2.announce();
+
+  delete zoms;
+
   return (0);
 }

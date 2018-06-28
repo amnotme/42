@@ -13,10 +13,10 @@ ZombieHorde::ZombieHorde( int number ) : _n(number) {
   }
 }
 ZombieHorde::ZombieHorde( void ) { srand (time(NULL)); }
-ZombieHorde::~ZombieHorde( void ) { return ; }
+ZombieHorde::~ZombieHorde( void ) { delete [] this->_zombies; }
 
 std::string    ZombieHorde::randomChump( void ) {
-  std::string arr[5] = {"Thor", "Zaz", "Tony", "Gaetan", "Meo"};
+  static std::string arr[5] = {"Thor", "Zaz", "Tony", "Gaetan", "Meo"};
   std::string zombieName = "";
   int randName = rand() % 5;
 
@@ -24,7 +24,7 @@ std::string    ZombieHorde::randomChump( void ) {
   return (zombieName);
 }
 
-void ZombieHorde::announce( void ) {
+void ZombieHorde::announce( void )  const {
   for (int i = 0 ; i < this->_n ; i++) {
     (this->_zombies)[i].announce();
   }

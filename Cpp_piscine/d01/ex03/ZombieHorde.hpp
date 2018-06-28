@@ -12,7 +12,7 @@ class ZombieHorde {
     ZombieHorde( int number );
     ZombieHorde( void );
     ~ZombieHorde( void );
-    void        announce(void);
+    void        announce(void) const;
     std::string randomChump(void);
 
   private:
