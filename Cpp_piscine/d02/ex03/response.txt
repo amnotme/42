@@ -1,0 +1,16 @@
+Choose one of you neighbors, and ask her/him :
+"What do you think of using a namespace instead of a class to represent fixed point
+values ? I mean, with a scoped typedef on int, we could write scoped functions and save
+the cost of instanciations, but at the same time, we’d loose some handy syntax. What’s
+your point of view ?"
+This exercice won’t give you points. It’s just a little break in the day to take time to
+look back at what you learned during the past three days.
+If you want to skip this, fine. I don’t care. You will probably end up being a web
+developper anyway >.> !
+
+
+Maya:
+
+"Using namespace will allow me to save a few extra lines that I don't have to
+code at the expense of having to explicitly write the class name"
+
