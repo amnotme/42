@@ -1,17 +1,29 @@
-#ifndef FRAGTRAP_H
-# define FRAGTRAP_H
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/06/30 14:56:56 by lhernand          #+#    #+#             */
+/*   Updated: 2018/06/30 14:56:57 by lhernand         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef ScavTrap_H
+# define ScavTrap_H
 #include <string>
 
 
-class FragTrap {
+class ScavTrap {
 
   public:
   //constructors
-  FragTrap( void );
-  FragTrap( std::string name );
-  FragTrap( FragTrap const & copy );
-  ~FragTrap( void );
-  FragTrap & operator=( FragTrap const & other );
+  ScavTrap( void );
+  ScavTrap( std::string name );
+  ScavTrap( ScavTrap const & copy );
+  ~ScavTrap( void );
+  ScavTrap & operator=( ScavTrap const & other );
 
   //getters (Accessor Functions)
   int         getHp( void ) const;
@@ -41,7 +53,7 @@ class FragTrap {
   void        meleeAttack( std::string const & target );
   void        takeDamage( unsigned int amount );
   void        beRepaired( unsigned int amount );
-  void        vaulthunter_to__exe( std::string const & target );
+  void        challengeNewcomer( std::string const & challenge );
   private:
   //private class member attributes
   int         _hp;
@@ -55,5 +67,9 @@ class FragTrap {
   std::string _name;
 
 };
+
+void        red( void );
+void        green( void );
+void        white( void );
 
 #endif

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   FragTrap.hpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/06/30 14:56:29 by lhernand          #+#    #+#             */
+/*   Updated: 2018/06/30 14:56:30 by lhernand         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef FRAGTRAP_H
 # define FRAGTRAP_H
 #include <string>
@@ -55,5 +67,9 @@ class FragTrap {
   std::string _name;
 
 };
+
+void        red( void );
+void        green( void );
+void        white( void );
 
 #endif
