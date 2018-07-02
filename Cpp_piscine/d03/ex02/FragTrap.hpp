@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/30 14:56:29 by lhernand          #+#    #+#             */
-/*   Updated: 2018/06/30 15:06:55 by lhernand         ###   ########.fr       */
+/*   Updated: 2018/06/30 14:56:30 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,5 +67,9 @@ class FragTrap {
   std::string _name;
 
 };
+
+void        red( void );
+void        green( void );
+void        white( void );
 
 #endif

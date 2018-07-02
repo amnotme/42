@@ -19,7 +19,7 @@
 
 ScavTrap::ScavTrap( void ) {
   srand (time(NULL));
-  std::cout << "ScavTrap -- start bootup sequence." << std::endl;
+  std::cout << "ClapTrap -- start bootup sequence." << std::endl;
   this->_hp = 100;
   this->_maxHp = 100;
   this->_mp = 50;
@@ -34,6 +34,7 @@ ScavTrap::ScavTrap( void ) {
 
 ScavTrap::ScavTrap( std::string name ) : _name(name) {
   srand (time(NULL));
+  std::cout << "ScavTrap -- start bootup sequence." << std::endl;
   this->_hp = 100;
   this->_maxHp = 100;
   this->_mp = 50;

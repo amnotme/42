@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/30 14:56:56 by lhernand          #+#    #+#             */
-/*   Updated: 2018/06/30 14:56:57 by lhernand         ###   ########.fr       */
+/*   Updated: 2018/06/30 15:07:06 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,9 +67,5 @@ class ScavTrap {
   std::string _name;
 
 };
-
-void        red( void );
-void        green( void );
-void        white( void );
 
 #endif
