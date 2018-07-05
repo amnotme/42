@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/05 02:48:41 by lhernand          #+#    #+#             */
-/*   Updated: 2018/07/05 04:27:47 by lhernand         ###   ########.fr       */
+/*   Updated: 2018/07/05 04:46:43 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@ int			main( void ) {
 	char d[] = {33, 34, 35, 36, 37};
 	std::string e[] = {"hello", "it's", "freaking", "late", "now"};
 
-	iter(a, array_size(a), foo<int>);
-	iter(b, array_size(b), foo<float>);
-	iter(c, array_size(c), foo<double>);
-	iter(d, array_size(d), foo<char>);
-	iter(e, array_size(e), foo<std::string>);
+	iter<int>(a, array_size(a), foo);
+	iter<float>(b, array_size(b), foo);
+	iter<double>(c, array_size(c), foo);
+	iter<char>(d, array_size(d), foo);
+	iter<std::string>(e, array_size(e), foo);
 	
 
 	return (0);
