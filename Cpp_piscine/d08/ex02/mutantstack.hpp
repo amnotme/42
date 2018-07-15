@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/06 19:14:40 by lhernand          #+#    #+#             */
-/*   Updated: 2018/07/06 23:39:44 by lhernand         ###   ########.fr       */
+/*   Updated: 2018/07/12 01:49:44 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,11 +70,15 @@ class	MutantStack : public std::stack<T>
 		
 		void printSet( void ) const {
 			std::ostream_iterator<int> screen(std::cout, "\033[1;32m - \033[0m");
-			copy(this->_s.begin(), this->_s.end(), screen);
+			std::ostream_iterator<int> screen3(std::cout, "");
+			copy(this->_s.begin(), --this->_s.end(), screen);
+			copy(this->_s.end(), ++this->_s.end(), screen3);
 			std::cout << std::endl;
 		}
 
 	private:
-		std::list<T>		_s;
+		std::list<T>			_s;
+
 };
+
 #endif

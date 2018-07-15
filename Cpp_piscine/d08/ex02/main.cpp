@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/06 19:14:24 by lhernand          #+#    #+#             */
-/*   Updated: 2018/07/06 23:42:07 by lhernand         ###   ########.fr       */
+/*   Updated: 2018/07/12 01:50:12 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,16 +34,7 @@ int			main( void )
 	mstack.printSet();
 	// the following lines are not necessary if using printSet();
 	// will be left there for demo purposes.
-	MutantStack<int>::iterator it = mstack.begin();
-	MutantStack<int>::iterator ite = mstack.end();
-	++it;
-	--it;
-
-	while (it != ite)
-	{
-		std::cout << *it << std::endl;
-		++it;
-	}
 	std::stack<int> s(mstack);
+	std::cout << s.size() << std::endl;
 	return (0);
 }
