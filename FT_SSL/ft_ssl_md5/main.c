@@ -6,13 +6,19 @@
 /*   By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/09 19:16:52 by lhernand          #+#    #+#             */
-/*   Updated: 2018/07/15 15:31:08 by lhernand         ###   ########.fr       */
+/*   Updated: 2018/07/16 03:24:18 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/libft.h"
+#include "md5.h"
 
-int				main(void)
+int				main(int argc, char *argv[])
 {
-
+	if (argc < 2)
+		md5_print_usage_no_params();
+	else
+	{
+		md5_file(argv[1]);
+	}
+	return (0);
 }
