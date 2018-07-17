@@ -6,7 +6,7 @@
 /*   By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/15 23:52:42 by lhernand          #+#    #+#             */
-/*   Updated: 2018/07/16 03:24:23 by lhernand         ###   ########.fr       */
+/*   Updated: 2018/07/17 02:19:10 by leopoldoh        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,8 @@ void			md5_update(t_md5 *md5, t_uchar *data, t_uint len)
 				i[1] = i[1] + 4;
 			}
 			number_bytes = 0;
+			printf("here");
+			md5_transform(md5->buf, buf);
 		}
 	}
 }

@@ -6,7 +6,7 @@
 #    By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/07/09 11:29:32 by lhernand          #+#    #+#              #
-#    Updated: 2018/07/16 01:08:45 by lhernand         ###   ########.fr        #
+#    Updated: 2018/07/17 02:15:49 by leopoldoh        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,8 +20,8 @@ CFILES = $(LIB)/libft.a \
 		 md5_print_error.c \
 		 md5_init.c \
 		 md5_file_parser.c \
-		 md5_update.c
-
+		 md5_update.c \
+		 md5_transform.c
 
 #These options are here in case the lib needs to be recompiled.
 #LIBM, LIBC, LIBF will run rules re, clean and fclean inside the libft folder
