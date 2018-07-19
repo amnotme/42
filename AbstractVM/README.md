@@ -215,5 +215,73 @@ examples:
 4 Line : Error : Pop on empty stack
 5 $>
 ```
+## Mandatory Part
 
+### Generic Instructions
 
+- You are free to use any compiler you like.
+- Your code must compile with: -Wall -Wextra -Werror.
+- You are free to use any C++ version you like.
+- You are free to use any library you like.
+- You must provide a Makefile with the usual rules.
+- Any class that declares at least one attribute must be written in canonical 
+form. Inheriting from a class that declares attributes does not count as 
+declaring attributes.
+- It’s forbidden to implement any function in a header file, except for 
+templates and the virtual destructor of a base class.
+- The “keyword” "using namespace" is forbidden.
+
+### The IOperand interface
+
+- Int8 : Representation of a signed integer coded on 8bits.
+- Int16 : Representation of a signed integer coded on 16bits.
+- Int32 : Representation of a signed integer coded on 32bits.
+- Float : Representation of a float.
+- Double : Representation of a double.
+
+Each one of these operand classes **MUST** implement the following 
+IOperand interface:
+
+```
+class IOperand {
+public:
+	virtual int getPrecision( void ) const = 0; // Precision of the type of the instance
+	virtual eOperandType getType( void ) const = 0; // Type of the instance
+	virtual IOperand const * operator+( IOperand const & rhs ) const = 0; // Sum
+	virtual IOperand const * operator-( IOperand const & rhs ) const = 0; // Difference
+	virtual IOperand const * operator*( IOperand const & rhs ) const = 0; // Product
+	virtual IOperand const * operator/( IOperand const & rhs ) const = 0; // Quotient
+	virtual IOperand const * operator%( IOperand const & rhs ) const = 0; // Modulo
+
+	virtual std::string const & toString( void ) const = 0; // String representation of the instance
+	virtual ~IOperand( void ) {}
+};
+```
+
+### Creation of new Operand
+
+New operands **MUST** be created via a "factory method". 
+The member function must have this prototype:
+
+```
+IOperand const * createOperand( eOperandType type, std::string const & value ) const;
+```
+
+The ```eOperandType type``` is an enum defining the following values:
+``` Int8, Int16, Int32, Float, Double```
+
+Depending on the _enum_ value passed as a parameter, the member function 
+createOperand creates a new IOperand by calling one of the following private 
+member functions:
+
+```
+IOperand const * createInt8( std::string const & value ) const;
+IOperand const * createInt16( std::string const & value ) const;
+IOperand const * createInt32( std::string const & value ) const;
+IOperand const * createFloat( std::string const & value ) const;
+IOperand const * createDouble( std::string const & value ) const;
+```
+
+In order to choose the right member function for the creation of the new 
+IOperand, you **MUST** create and use an array (here, a vector shows little 
+interest) of pointers on member functions with enum values as index
